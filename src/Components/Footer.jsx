@@ -1,41 +1,61 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../Styles/Footer.css";
 
 function Footer(props) {
-  const { dataFooter } = props;
+  const { dataFooter, dataLista, dataMas, dataImg } = props;
 
   return (
     <>
-      <div className="card text-center bg-info">
+      <div className="card text-center bg-info ">
         <div className="card-header text-light">Nombre de pag</div>
-        <div className="card-body">
-          <h5 className="card-title text-light">¿Quieres saber mas de nosotros?</h5>
-          <p className="card-text text-light">
-            Aqui estan nuestras redes sociales:
-          </p>
-          <div className="float-right  text-light">
-            <ul>
+
+        <div className="row text-center col-12 justify-content-center">
+          <ul className="  text-light acerca">
+            <li className=" text-light titulo col-12">NOMBRE DE LA PÁGINA</li>
+
+            {dataLista.map((item, index) => {
+              return <li className="col-12" key={`listaMas-item-${index}`}>{item.name}</li>;
+            })}
+          </ul>
+
+          <ul className=" justify-content-right text-light acerca">
+            <li className=" text-light titulo col-12">MÁS</li>
+
+            {dataMas.map((item, index) => {
+              return <li className="col-12" key={`lista-item-${index}`}>{item.name}</li>;
+            })}
+          </ul>
+          <ul>
+            {dataImg.map((item, index) => {
+              return (
+               <li className="d-img col-12">
+                  <img
+                  className="justify-content-center"
+                  src={item.src}
+                  key={`imgdonwload-item-${index}`}
+                  alt=""
+                />
+               </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="card-footer text-light">
+          © 2020 nombre pag Todos los derechos reservados.
+          <div className="text-light icons ">
+      
               {dataFooter.map((item, index) => {
                 return (
-                  <Link to={item.link} className="nav-link text-light titulo">
-                    <li key={`footer-item-${index}`}>
-                      <i className={item.icon}></i>&nbsp; &nbsp;
-                      {item.name}
-                    </li>
+                  <Link to={item.link} className=" text-light titulo">
+                      <i key={`icons-item-${index}`} className={item.icon}></i>&nbsp; &nbsp;
+               
                   </Link>
                 );
               })}
-            </ul>
-          </div>
-          <div className="footer-copyright">
-            <div className="container">
-              <p className="float-left grey-text text-light right" href="#!">
-                Hecho con amor en Medellin, Colombia.
-              </p>
-            </div>
+           
           </div>
         </div>
-        <div className="card-footer text-light">© 2020 nombre pag</div>
       </div>
     </>
   );
