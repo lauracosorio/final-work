@@ -25,7 +25,7 @@ function Navbar(props) {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="nav navbar-nav mr-auto">
+          <ul className="navbar-nav mr-auto">
             {dataNav.map((item, index) => {
               return (
                 <Link to= {item.link} className="nav-link text-light titulo">
@@ -36,24 +36,24 @@ function Navbar(props) {
               );
             })}
 
-            <li className="nav-item dropdown desplegable">
+            <li className="nav-item dropdown">
               <a
                 className="  nav-link dropdown-toggle text-white"
                 data-toggle="dropdown"
                 href="#"
-                type="button"
+                role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
-                id="dropdownMenu2"
+                id="navbarDropdown"
               >
                 más
               </a>
-              </li>
-              <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+              
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
 
               {dataDespliegue.map((item, index) => {
               return (
-                  <Link to = {item.link} >
+                  <Link to = {item.link} className="dropsown-item">
                   <li className="nav-item" key={`despliegue-item-${index}`}>
                     {item.title}
                   </li>
@@ -61,6 +61,7 @@ function Navbar(props) {
                    );
                 })}
               </div>
+              </li>
            
           </ul>
         </div>

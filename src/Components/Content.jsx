@@ -39,7 +39,7 @@ function Content(props) {
           {Carousel.map((item, index) => {
             return (
               <div className="carousel-item active" key={`img-item-${index}`}>
-                <img src={item.image} className="d-block w-100" alt="..." />
+                <img src={item.image} className="d-block w-100 image" alt="..." />
                 <div className=" carousel-caption d-none d-md-block">
                   <h5 className="text-info font-weight-bold">{item.title}</h5>
                   <p className="text-dark font-weight-bold">
@@ -58,7 +58,7 @@ function Content(props) {
           {Carousel1.map((item, index) => {
             return (
               <div className="carousel-item" key={`img-item-${index}`}>
-                <img src={item.image} className="d-block w-100" alt="..." />
+                <img src={item.image} className="d-block w-100 image" alt="..." />
                 <div className=" carousel-caption d-none d-md-block">
                   <h5 className="text-info font-weight-bold">{item.title}</h5>
                   <p className="text-dark font-weight-bold">
@@ -85,7 +85,7 @@ function Content(props) {
         {dataBox.map((item, index) => {
           return (
             <div
-              className="border-info col-6 col-md-3 card caja"
+              className="border-info col-xs-12 col-sm-6 col-md-3 col-lg-3 card caja"
               key={`box-item-${index}`}
             >
               <img
@@ -131,7 +131,7 @@ function Content(props) {
 
       <div className="container">
         <center>
-          <h2 className="text-info libros">Libros destacados</h2>
+          <h2 className="text-info libros">Libros Recomendados</h2>
         </center>
       </div>
 
@@ -139,7 +139,7 @@ function Content(props) {
         {dataBook.map((item, index) => {
           return (
             <div
-              className="border-info col-6 col-md-3 col-lg-3 card caja"
+              className="border-info ccol-xs-12 col-sm-6 col-md-3 col-lg-3 card caja"
               key={`book-item-${index}`}
             >
               <img

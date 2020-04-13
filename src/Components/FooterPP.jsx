@@ -7,7 +7,10 @@ class FooterPP extends Component {
         return (
             <div id="Footer">
                <Footer 
-               dataFooter = {data.Footer}/>
+               dataFooter = {data.Footer}
+               dataLista = {data.Lista}
+               dataMas = {data.Mas}
+               dataImg = {data.img}/>
                 </div>
                             
                       
