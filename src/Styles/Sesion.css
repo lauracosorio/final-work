@@ -1,0 +1,103 @@
+body {
+  background-color: white;
+}
+
+.center {
+  text-align: center;
+  margin: 101.6px 24px;
+}
+
+.titulo {
+  font-size: 15px;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center !important;
+}
+
+.formulario {
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-bottom: 0px;
+  margin: 0 auto;
+}
+
+.condiciones {
+  font-size: 15px;
+  margin: 24px 0px;
+}
+
+.hr {
+  margin-top: 16px;
+  align-items: center;
+}
+
+.contraseña {
+  color: #17a2b8 !important;
+}
+
+.inicia {
+  color: #17a2b8 !important;
+}
+.inicia:hover {
+  color: #396c74 !important;
+}
+.contraseña:hover {
+  color: #396c74 !important;
+}
+
+.contraseña,
+.registrese:hover {
+  text-decoration: none !important;
+}
+
+button {
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  margin-bottom: 16px;
+  width: 100%;
+  /* background-color: rgb(80, 164, 167) !important;
+    border: rgb(80, 164, 167) !important; */
+}
+
+.facebook- {
+  background-color: #1a538a !important;
+  color: white !important;
+}
+
+.face-title {
+  color: white;
+}
+
+.face-title:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.facebook-:hover {
+  background-color: #174169 !important;
+}
+
+input:focus {
+  outline: none !important;
+  border: none;
+}
+
+.google- {
+  background-color: #ec5252 !important;
+  color: white !important;
+  padding-left: 0px !important;
+}
+
+.google-title {
+  color: white;
+}
+
+.google-title:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.google-:hover {
+  background-color: #df3838 !important;
+}
