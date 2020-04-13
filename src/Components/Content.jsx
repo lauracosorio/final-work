@@ -1,21 +1,34 @@
 import React from "react";
 import "../Styles/Content.css";
+import { Link } from "react-router-dom";
 
 function Content(props) {
-  const { dataCarousel, Carousel, dataBox, dataSpan, dataBook } = props;
+  const {
+    dataCarousel,
+    Carousel,
+    Carousel1,
+    dataBox,
+    dataSpan,
+    dataBook
+  } = props;
 
   return (
     <>
       <div
-        id="carouselExampleCaptions"
+        id="carouselCaptions"
         className="carousel slide"
         data-ride="carousel"
       >
         <ol className="carousel-indicators">
+          <li
+            data-target="#carouselCaptions"
+            data-slide-to="0"
+            className="active"
+          ></li>
           {dataCarousel.map((item, index) => {
             return (
               <li
-                data-target="#carouselExampleCaptions"
+                data-target="#carouselCaptions"
                 key={`carousel-item-${index}`}
                 data-slide-to={item.slide}
               ></li>
@@ -32,9 +45,30 @@ function Content(props) {
                   <p className="text-dark font-weight-bold">
                     {item.description}
                   </p>
-                  <button type="button" className="btn btn-info">
-                    {item.button}
-                  </button>
+                  <Link to="/Registrese">
+                    <button type="button" className="btn btn-info col-2">
+                      {item.button}
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
+
+          {Carousel1.map((item, index) => {
+            return (
+              <div className="carousel-item" key={`img-item-${index}`}>
+                <img src={item.image} className="d-block w-100" alt="..." />
+                <div className=" carousel-caption d-none d-md-block">
+                  <h5 className="text-info font-weight-bold">{item.title}</h5>
+                  <p className="text-dark font-weight-bold">
+                    {item.description}
+                  </p>
+                  <Link to="/Registrese">
+                    <button type="button" className="btn btn-info col-2">
+                      {item.button}
+                    </button>
+                  </Link>
                 </div>
               </div>
             );
@@ -101,7 +135,6 @@ function Content(props) {
         </center>
       </div>
 
-
       <div className="row justify-content-center text-center conjunto col-12">
         {dataBook.map((item, index) => {
           return (
@@ -116,15 +149,16 @@ function Content(props) {
                 height="240"
                 alt="..."
               />
-              
+
               <div className="card-body" width="100">
-                <h5 className="card-title text-info text-center">{item.title}</h5>
+                <h5 className="card-title text-info text-center">
+                  {item.title}
+                </h5>
 
                 <a href="#" className="btn btn-info col-12  boton">
                   {item.button}
                 </a>
                 <p className="card-text description">{item.description}</p>
-                
               </div>
             </div>
           );

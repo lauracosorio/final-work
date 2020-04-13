@@ -54,9 +54,7 @@ export const data = {
   ],
 
   Carousel: [
-    {
-      slide: "0"
-    },
+  
     {
       slide: "1"
     },
@@ -65,24 +63,31 @@ export const data = {
     }
   ],
 
-  Carousel2: [
+  Carousel1: [
     {
       image: carrusel1,
       title: "Nombre pag",
       description: "Encuentra los mejores cursos para hacer crecer tu empresa.",
       button: "Unirme gratis"
     },
+ 
+  ],
+
+  Carousel2: [
+    
     {
       image: carrusel2,
       title: "Nombre pag",
       description: "Encuentra los mejores cursos para hacer crecer tu empresa.",
-      button: "Unirme gratis"
+      button: "Unirme gratis",
+      alt: "Second slide"
     },
     {
       image: carrusel3,
       title: "Nombre pag",
       description: "Encuentra los mejores cursos para hacer crecer tu empresa.",
-      button: "Unirme gratis"
+      button: "Unirme gratis",
+      alt: "Third slide"
     }
   ],
 

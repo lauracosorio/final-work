@@ -8,7 +8,8 @@ class ContentPP extends Component {
       <div id="Content">
         <Content
         dataCarousel = {data.Carousel}
-        Carousel = {data.Carousel2}
+        Carousel = {data.Carousel1}
+        Carousel1 = {data.Carousel2}
         dataBox = {data.box}
         dataSpan = {data.span}
         dataBook = {data.book} />
