@@ -100,10 +100,12 @@ function Content(props) {
           <h2 className="text-info libros">Libros destacados</h2>
         </center>
       </div>
-      <div className="accordion  col-lg-12 d-flex book justify-content-center" id="accordionExample">
+
+
+      <div className="row  col-md-12 d-flex book justify-content-center" id="accordionExample">
         {dataBook.map((item, index) => {
           return (
-            <div className="card col-lg-3 bookbox " key={`book-item-${index}`}>
+            <div className="card col-7 col-lg-3 bookbox " key={`book-item-${index}`}>
               <div className="card-header text-center " id="headingOne">
                 <h4 className="">
                 <img src={item.image} width="auto" height="250" />
