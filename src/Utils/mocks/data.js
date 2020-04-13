@@ -15,13 +15,22 @@ import libro3 from "../../Images/libro3.jpg";
 export const data = {
   Header: [
     {
+      name: "Cursos",
+      link: "/Cursos"
+    },
+    {
+      name: "Libros",
+      link: "/Libros"
+    },
+    {
       name: "Iniciar Sesión",
       link: "/Iniciar"
     },
     {
       name: "Registrarse",
       link: "/Registrese"
-    }
+    },
+    
   ],
 
   Despliegue: [

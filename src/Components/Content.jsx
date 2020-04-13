@@ -98,9 +98,9 @@ function Content(props) {
               <div className="card-body" width="100">
                 <h5 className="card-title text-info">{item.title}</h5>
                 <p className="card-text">{item.description}</p>
-                <a href="#" className="btn btn-info">
+                <Link to = "Registrese" className="btn btn-info">
                   {item.button}
-                </a>
+                </Link>
               </div>
             </div>
           );
@@ -155,9 +155,9 @@ function Content(props) {
                   {item.title}
                 </h5>
 
-                <a href="#" className="btn btn-info col-12  boton">
+                <Link to = "Registrese" className="btn btn-info col-12  boton">
                   {item.button}
-                </a>
+                </Link>
                 <p className="card-text description">{item.description}</p>
               </div>
             </div>

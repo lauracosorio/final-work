@@ -8,11 +8,15 @@ function Navbar(props) {
 
   return (
     <>
-      <nav className="navbarset navbar navbar-expand-lg navbar-light bg-info">
+
+    
+
+
+      <nav className="navbarset navbar navbar-expand-lg navbar-light bg-info ">
         <Link to ="/Home" className="navbar-brand text-light" href="#">
           Nombre pag
         </Link>
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -22,10 +26,10 @@ function Navbar(props) {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
+        <div className="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto ">
             {dataNav.map((item, index) => {
               return (
                 <Link to= {item.link} className="nav-link text-light titulo">
@@ -36,7 +40,7 @@ function Navbar(props) {
               );
             })}
 
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <a
                 className="  nav-link dropdown-toggle text-white"
                 data-toggle="dropdown"
@@ -47,9 +51,9 @@ function Navbar(props) {
                 id="navbarDropdown"
               >
                 más
-              </a>
+              </a> */}
               
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
 
               {dataDespliegue.map((item, index) => {
               return (
@@ -60,9 +64,9 @@ function Navbar(props) {
                   </Link>
                    );
                 })}
-              </div>
-              </li>
-           
+              </div> */}
+              {/* </li>
+            */}
           </ul>
         </div>
       </nav>
