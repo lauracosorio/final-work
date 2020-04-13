@@ -48,7 +48,7 @@ function Footer(props) {
               {dataFooter.map((item, index) => {
                 return (
                   <Link to={item.link} className=" text-light titulo">
-                      <i className={item.icon}></i>&nbsp; &nbsp;
+                      <i key={`icons-item-${index}`} className={item.icon}></i>&nbsp; &nbsp;
                
                   </Link>
                 );
