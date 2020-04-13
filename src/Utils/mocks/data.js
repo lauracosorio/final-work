@@ -210,27 +210,27 @@ export const data = {
   ],
 
 
-//   formGroup: [
-// //     {
-//       type: "text",
-//       name: "fullname",
-//       dpurpose: "fullname",
-//       placeholder: "Nombre completo",
-//       id: "id_fullname"
-//     },
-//     {
-//         type: "email",
-//         name: "email",
-//         dpurpose: "fullemail",
-//         placeholder: "Correo Electrónico",
-//         id: "id_email"
-//     },
-//     {
-//         type: "password",
-//         name: "password",
-//         purpose: "password",
-//         placeholder: "Contraseña",
-//         id: "id_password"
-//     }
-//   ]
+  // Registrese: [
+  //   {
+  //     type: "text",
+  //     name: "fullname",
+  //     purpose: "fullname",
+  //     placeholder: "Nombre completo",
+  //     id: "id_fullname"
+  //   },
+  //   {
+  //       type: "email",
+  //       name: "email",
+  //       purpose: "fullemail",
+  //       placeholder: "Correo Electrónico",
+  //       id: "id_email"
+  //   },
+  //   {
+  //       type: "password",
+  //       name: "password",
+  //       purpose: "password",
+  //       placeholder: "Contraseña",
+  //       id: "id_password"
+  //   }
+  ]
 };
