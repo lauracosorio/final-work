@@ -1,0 +1,34 @@
+.cursos {
+    padding: 20px;
+}
+
+.caja {
+    padding: 10px !important;
+    margin: 20px;
+}
+
+.conjunto {
+    margin-bottom: 50px;
+}
+
+.span {
+    padding: 20px;
+}
+
+.libros {
+    padding: 30px;
+}
+
+.bookbox {
+    margin: 0px 10px;
+    margin-bottom: 50px;
+}
+
+.book {
+    margin: 0 auto;
+}
+
+.title {
+    padding-top: 15px !important ;
+    padding: 10px;
+}
