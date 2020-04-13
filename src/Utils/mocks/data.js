@@ -113,19 +113,19 @@ export const data = {
   span: [
     {
       image: buscar,
-      title: "BUSCA"
+      title: "PREPÁRATE"
     },
     {
       image: agrega,
-      title: "AGREGA TUS CURSOS"
+      title: "MANEJA TU TIEMPO"
     },
     {
       image: aprende,
-      title: "APRENDE"
+      title: "APRENDE NUEVAS HABILIDADES"
     },
     {
       image: mejora,
-      title: "MEJORA"
+      title: "MEJORA TU EMPRESA"
     }
   ],
 

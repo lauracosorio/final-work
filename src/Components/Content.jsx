@@ -47,7 +47,7 @@ function Content(props) {
           <h2 className="text-info cursos">Cursos destacados</h2>
         </center>
       </div>
-      <div className="row justify-content-center conjunto">
+      <div className="row justify-content-center text-center conjunto col-12">
         {dataBox.map((item, index) => {
           return (
             <div
@@ -81,15 +81,15 @@ function Content(props) {
         {dataSpan.map((item, index) => {
           return (
             <div
-              className="btn-group-info span"
+              className="group-light span"
               role="group"
               aria-label="First group"
               key={`span-item-${index}`}
             >
-              <button type="button" className="btn btn-info">
-                <img src={item.image} />
+              <span type="" className="info span">
+                <img src={item.image} /> &nbsp;
                 {item.title}
-              </button>
+              </span>
             </div>
           );
         })}
@@ -102,33 +102,29 @@ function Content(props) {
       </div>
 
 
-      <div className="row  col-md-12 d-flex book justify-content-center" id="accordionExample">
+      <div className="row justify-content-center text-center conjunto col-12">
         {dataBook.map((item, index) => {
           return (
-            <div className="card col-7 col-lg-3 bookbox " key={`book-item-${index}`}>
-              <div className="card-header text-center " id="headingOne">
-                <h4 className="">
-                <img src={item.image} width="auto" height="250" />
-                  <p className="text-info text-center title">{item.title}</p>
+            <div
+              className="border-info col-6 col-md-3 col-lg-3 card caja"
+              key={`book-item-${index}`}
+            >
+              <img
+                src={item.image}
+                className="card-img-top"
+                width="100"
+                height="240"
+                alt="..."
+              />
+              
+              <div className="card-body" width="100">
+                <h5 className="card-title text-info text-center">{item.title}</h5>
 
-                  <button
-                    type="button"
-                    className="float-right btn btn-info btn-lg text-center"
-                  >
-                    {item.button}
-                  </button>
-                </h4>
-              </div>
-
-              <div
-                id="collapseOne"
-                className="collapse show"
-                aria-labelledby="headingOne"
-                data-parent="#accordionExample"
-              >
-                <div className="card-body">
-                  {item.description}
-                </div>
+                <a href="#" className="btn btn-info col-12  boton">
+                  {item.button}
+                </a>
+                <p className="card-text description">{item.description}</p>
+                
               </div>
             </div>
           );
