@@ -232,5 +232,5 @@ export const data = {
   //       placeholder: "Contraseña",
   //       id: "id_password"
   //   }
-  ]
+  // ]
 };
