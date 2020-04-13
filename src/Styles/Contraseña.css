@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+}
+
+.formulario {
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-bottom: 0px;
+    margin: 0 auto;
+}
+
+.condiciones {
+    font-size: 15px;
+    margin: 24px 0px;
+}
+
+.hr {
+    margin-top: 16px;
+    align-items: center;
+}
+
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    height: 55px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2px !important;
+    /* background-color: rgb(80, 164, 167) !important;
+    border: rgb(80, 164, 167) !important; */
+}
+
+
+.restablecer {
+    padding: 0px;
+}
+
+.log {
+    color: #17a2b8 !important;
+}
+ .log:hover {
+    color: #396c74 !important;
+}

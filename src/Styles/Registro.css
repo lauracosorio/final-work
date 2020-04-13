@@ -1,0 +1,58 @@
+body {
+    background-color: white;
+}
+
+.center {
+    text-align: center;
+    margin: 101.600px 24px;
+}
+
+.encabezado {
+    font-size: 15px;
+    padding: 24px;
+    font-weight: 600;
+    text-align: center !important;
+}
+
+.formulario {
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-bottom: 0px;
+    margin: 0 auto;
+}
+
+.condiciones {
+    font-size: 11px;
+    margin: 24px 0px;
+}
+
+.hr {
+    margin-top: 16px;
+    align-items: center;
+}
+
+b {
+    color: #17a2b8;
+}
+
+.sesion:hover {
+    color: #396c74;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    margin-bottom: 16px;
+    width: 100%;
+    /* background-color: rgb(80, 164, 167) !important;
+    border: rgb(80, 164, 167) !important; */
+}
+
+.login:hover {
+    text-decoration: none;
+}
+
+
+
+
