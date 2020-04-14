@@ -6,6 +6,7 @@ import Contraseña from "../Components/Contraseña.jsx";
 import Registrese from "../Components/Registrese.jsx"
 import Home from "../Components/Home.jsx";
 import Iniciar from "../Components/Iniciar-sesion.jsx";
+import Cursos from "../Components/Cursos.jsx";
 
 
 
@@ -23,7 +24,11 @@ function Proyecto () {
           <Route path="/Iniciar" component={Iniciar} />
           <Route path="/Contraseña" component={Contraseña} />
           <Route path="/Registrese" component={Registrese} />
+          <Route path = "/Cursos" component= {Cursos} />
+          
         </Layout>
+        
+        
 
       </Switch>
     </BrowserRouter>

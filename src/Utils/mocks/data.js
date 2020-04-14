@@ -11,6 +11,15 @@ import mejora from "../../Images/gorra.png";
 import libro1 from "../../Images/libro1.jpg";
 import libro2 from "../../Images/libro2.jfif";
 import libro3 from "../../Images/libro3.jpg";
+import mt1 from "../../Images/mt-1.jpg";
+import mt2 from "../../Images/mt-2.jpg";
+import mt3 from "../../Images/mt-3.jpg";
+import mt4 from "../../Images/mt-4.jpg";
+import mt5 from "../../Images/mt-5.jpg";
+import mt6 from "../../Images/mt-6.jpg";
+import mt7 from "../../Images/mt-7.jpg";
+import mt8 from "../../Images/mt-8.jpg";
+import mt9 from "../../Images/mt-9.jpg"
 
 export const data = {
   Header: [
@@ -31,6 +40,38 @@ export const data = {
       link: "/Registrese"
     },
     
+  ],
+
+  HeaderPerfil: [
+    {
+      name: "Cursos",
+      link: "/Cursos"
+    },
+    {
+      name: "Libros",
+      link: "/Libros"
+    }
+
+  ],
+
+ Despliegue :[
+    {
+      title: "Mis Cursos",
+      link: "/"
+    },
+    {
+      title: "Mis Libros",
+      link: "/"
+    },
+    {
+      title: "Asesorias",
+      link: "/"
+    },
+    {
+      title: "Configuraciones",
+      link: "/"
+    }
+
   ],
 
   Footer: [
@@ -195,6 +236,81 @@ export const data = {
     },
     {
       src: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDov%0D%0AL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjIiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAg%0D%0AMCAxMjIgMzYiPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0i%0D%0ANjEuMTI1JSIgeDI9IjI2LjMwOSUiIHkxPSI0Ljk0OCUiIHkyPSI3MS45MDclIj4KICAgICAgICAg%0D%0AICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwQTBGRiIvPgogICAgICAgICAgICA8%0D%0Ac3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjMDBBMUZGIi8+CiAgICAgICAgICAgIDxzdG9w%0D%0AIG9mZnNldD0iMjYlIiBzdG9wLWNvbG9yPSIjMDBCRUZGIi8+CiAgICAgICAgICAgIDxzdG9wIG9m%0D%0AZnNldD0iNTElIiBzdG9wLWNvbG9yPSIjMDBEMkZGIi8+CiAgICAgICAgICAgIDxzdG9wIG9mZnNl%0D%0AdD0iNzYlIiBzdG9wLWNvbG9yPSIjMDBERkZGIi8+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0i%0D%0AMTAwJSIgc3RvcC1jb2xvcj0iIzAwRTNGRiIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAg%0D%0AICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJiIiB4MT0iMTA3LjY4NSUiIHgyPSItMTMwLjY0JSIg%0D%0AeTE9IjUwJSIgeTI9IjUwJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29s%0D%0Ab3I9IiNGRkUwMDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSI0MSUiIHN0b3AtY29sb3I9%0D%0AIiNGRkJEMDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSI3OCUiIHN0b3AtY29sb3I9IiNG%0D%0ARkE1MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkY5%0D%0AQzAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bGluZWFyR3JhZGllbnQg%0D%0AaWQ9ImMiIHgxPSI4Ni4yMTklIiB4Mj0iLTUwLjE1JSIgeTE9IjMxLjA2NyUiIHkyPSIxMzUuMjg0%0D%0AJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRjNBNDQiLz4K%0D%0AICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjQzMxMTYyIi8+CiAg%0D%0AICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImQiIHgx%0D%0APSItMTguNzU0JSIgeDI9IjQyLjEyMSUiIHkxPSItMTEuMzI2JSIgeTI9IjM1LjIxNyUiPgogICAg%0D%0AICAgICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMzJBMDcxIi8+CiAgICAgICAg%0D%0AICAgIDxzdG9wIG9mZnNldD0iNyUiIHN0b3AtY29sb3I9IiMyREE3NzEiLz4KICAgICAgICAgICAg%0D%0APHN0b3Agb2Zmc2V0PSI0OCUiIHN0b3AtY29sb3I9IiMxNUNGNzQiLz4KICAgICAgICAgICAgPHN0%0D%0Ab3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiMwNkU3NzUiLz4KICAgICAgICAgICAgPHN0b3Ag%0D%0Ab2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDBGMDc2Ii8+CiAgICAgICAgPC9saW5lYXJHcmFk%0D%0AaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyI+%0D%0ACiAgICAgICAgPHJlY3Qgd2lkdGg9IjEyMiIgaGVpZ2h0PSIzNiIgZmlsbD0iIzAwMCIgcng9IjQu%0D%0ANSIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNBNkE2QTYiIGQ9Ik0xMTcuNDgxLjcyYTMuNzg4IDMu%0D%0ANzg4IDAgMCAxIDMuNzk2IDMuNzh2MjdjMCAyLjA4OC0xLjcgMy43OC0zLjc5NiAzLjc4SDQuNTJB%0D%0AMy43ODggMy43ODggMCAwIDEgLjcyMyAzMS41di0yN2MwLTIuMDg4IDEuNy0zLjc4IDMuNzk2LTMu%0D%0ANzhIMTE3LjQ4em0wLS43Mkg0LjUyQzIuMDIzIDAgMCAyLjAxNSAwIDQuNXYyN0MwIDMzLjk4NSAy%0D%0ALjAyMyAzNiA0LjUxOSAzNkgxMTcuNDhjMi40OTYgMCA0LjUxOS0yLjAxNSA0LjUxOS00LjV2LTI3%0D%0AYzAtMi40ODUtMi4wMjMtNC41LTQuNTE5LTQuNXoiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjRkZG%0D%0AIiBkPSJNNjEuNTc4IDE5LjU3NWEzLjgzMyAzLjgzMyAwIDAgMC0zLjgyMiAzLjgzNyAzLjgzMyAz%0D%0ALjgzMyAwIDAgMCAzLjg0NiAzLjgxMyAzLjgzMyAzLjgzMyAwIDAgMCAzLjgzNS0zLjgyNSAzLjc2%0D%0AMyAzLjc2MyAwIDAgMC0xLjExNS0yLjcyNyAzLjc5NSAzLjc5NSAwIDAgMC0yLjc0NC0xLjA5OHpt%0D%0AMCA2LjE0N2EyLjMzMyAyLjMzMyAwIDAgMS0yLjI2Ni0xLjMxNSAyLjMxNSAyLjMxNSAwIDAgMSAu%0D%0AMzk3LTIuNTgzIDIuMzM4IDIuMzM4IDAgMCAxIDIuNTU3LS41OCAyLjMyMiAyLjMyMiAwIDAgMSAx%0D%0ALjQ4MSAyLjE1NmMuMDMuNTk2LS4xODQgMS4xOC0uNTkyIDEuNjE3YTIuMjI3IDIuMjI3IDAgMCAx%0D%0ALTEuNTc3LjcwNXptLTguNDEzLTYuMTQ3YTMuODMzIDMuODMzIDAgMCAwLTMuODMyIDMuODMxIDMu%0D%0AODMzIDMuODMzIDAgMCAwIDMuODQ0IDMuODE5IDMuODMzIDMuODMzIDAgMCAwIDMuODM4LTMuODI1%0D%0AIDMuNzYzIDMuNzYzIDAgMCAwLTEuMTE1LTIuNzI3IDMuNzk1IDMuNzk1IDAgMCAwLTIuNzQ0LTEu%0D%0AMDk4aC4wMDl6bTAgNi4xNDdhMi4zMzMgMi4zMzMgMCAwIDEtMi4yNzMtMS4zMDkgMi4zMTUgMi4z%0D%0AMTUgMCAwIDEgLjM5LTIuNTg1IDIuMzM4IDIuMzM4IDAgMCAxIDIuNTYtLjU4NSAyLjMyMiAyLjMy%0D%0AMiAwIDAgMSAxLjQ4MyAyLjE1N2MuMDMuNTk2LS4xODUgMS4xOC0uNTkzIDEuNjE3YTIuMjI3IDIu%0D%0AMjI3IDAgMCAxLTEuNTc2LjcwNWguMDA5em0tMTAuMDIyLTQuOTY4djEuNjJoMy45MDRhMy4zODYg%0D%0AMy4zODYgMCAwIDEtLjkwNCAyLjA0MyA0LjAwMyA0LjAwMyAwIDAgMS0zLjAxIDEuMTg4Yy0yLjM5%0D%0ANSAwLTQuMzM3LTEuOTM0LTQuMzM3LTQuMzJzMS45NDItNC4zMiA0LjMzOC00LjMyYzEuMS0uMDE4%0D%0AIDIuMTYzLjQgMi45NTUgMS4xNjFsMS4xNDgtMS4xNDNhNS42OTYgNS42OTYgMCAwIDAtNC4wOTQt%0D%0AMS42ODMgNS45OCA1Ljk4IDAgMCAwLTUuMzY3IDIuOTAzIDUuOTI4IDUuOTI4IDAgMCAwIDAgNi4w%0D%0AODMgNS45OCA1Ljk4IDAgMCAwIDUuMzY3IDIuOTAzIDUuNDM0IDUuNDM0IDAgMCAwIDQuMTY2LTEu%0D%0ANjY1IDUuMzg3IDUuMzg3IDAgMCAwIDEuNDEtMy43OTggNS4yNjIgNS4yNjIgMCAwIDAtLjA5LTEu%0D%0AMDE3bC01LjQ4Ni4wNDV6bTQwLjk0NyAxLjI2YTMuNjEzIDMuNjEzIDAgMCAwLTMuMjktMi40Mzlj%0D%0ALS45OTktLjAwMi0xLjk1NC40MDgtMi42NCAxLjEzM2EzLjU5MSAzLjU5MSAwIDAgMC0uOTc1IDIu%0D%0ANjkyIDMuNzM2IDMuNzM2IDAgMCAwIDEuMDkxIDIuNzJBMy43NjcgMy43NjcgMCAwIDAgODEgMjcu%0D%0AMjI0YTMuODI3IDMuODI3IDAgMCAwIDMuMi0xLjY5MmwtMS4zMTEtLjlhMi4xOTggMi4xOTggMCAw%0D%0AIDEtMS44ODkgMS4wNjJjLS44MDEuMDMtMS41NC0uNDMtMS44NjItMS4xNjFsNS4xNDItMi4xMTUt%0D%0ALjE5LS40MDV6bS01LjI0MiAxLjI3OGEyLjA5MiAyLjA5MiAwIDAgMSAuNTMyLTEuNTM2IDIuMTEg%0D%0AMi4xMSAwIDAgMSAxLjQ3NC0uNjk2Yy41OTYtLjA0IDEuMTU4LjI4IDEuNDI4LjgxbC0zLjQzNCAx%0D%0ALjQyMnpNNzQuNjczIDI3aDEuNjlWMTUuNzVoLTEuNjlWMjd6bS0yLjc2NS02LjU3aC0uMDY0YTIu%0D%0ANzE2IDIuNzE2IDAgMCAwLTIuMDI0LS45IDMuODQxIDMuODQxIDAgMCAwLTMuNjYzIDMuODMgMy44%0D%0ANDEgMy44NDEgMCAwIDAgMy42NjMgMy44MjkgMi42MjUgMi42MjUgMCAwIDAgMi4wMjQtLjloLjA1%0D%0ANXYuNTQ5YzAgMS40NjctLjc4NyAyLjI1LTIuMDUyIDIuMjVhMi4xMjMgMi4xMjMgMCAwIDEtMS45%0D%0AMzQtMS4zNTlsLTEuNDczLjYxMmEzLjY2IDMuNjYgMCAwIDAgMy40MDcgMi4yNmMxLjk4IDAgMy42%0D%0AMTUtMS4xNjIgMy42MTUtMy45ODhWMTkuOGgtMS41NTR2LjYzem0tMS45MzQgNS4yOTJhMi4zMzUg%0D%0AMi4zMzUgMCAwIDEtMi4xMzUtMi4zMjJjMC0xLjIwOC45MjYtMi4yMTYgMi4xMzUtMi4zMjIuNTg0%0D%0ALjAzIDEuMTMuMjkzIDEuNTE3LjczLjM4Ni40MzguNTc5IDEuMDExLjUzNCAxLjU5MmEyLjEzNiAy%0D%0ALjEzNiAwIDAgMS0uNTMxIDEuNmMtLjM5LjQzOS0uOTQyLjctMS41My43MjJoLjAxem0yMi4wMzIt%0D%0AOS45NzJoLTQuMDRWMjdoMS42OXYtNC4yNjZoMi4zNmEzLjUyIDMuNTIgMCAwIDAgMy4yNTMtMS42%0D%0ANyAzLjQ4OSAzLjQ4OSAwIDAgMCAwLTMuNjQ0IDMuNTIgMy41MiAwIDAgMC0zLjI1NC0xLjY3aC0u%0D%0AMDA5em0wIDUuNGgtMi4zNTl2LTMuODM0aDIuMzk1YzEuMDcgMCAxLjkzOS44NjQgMS45MzkgMS45%0D%0AMyAwIDEuMDY3LS44NjggMS45MzEtMS45MzkgMS45MzFsLS4wMzYtLjAyN3ptMTAuNDItMS42MmEz%0D%0ALjE2NSAzLjE2NSAwIDAgMC0zLjAxIDEuNzE5bDEuNS42MjFjLjMwMy0uNTU1LjkwNS0uODggMS41%0D%0AMzctLjgyOC40MzMtLjA1Ljg2OS4wNzUgMS4yMDkuMzQ3LjM0LjI3My41NTUuNjcuNTk4IDEuMTAy%0D%0Adi4xMTdhMy43NDUgMy43NDUgMCAwIDAtMS43NjItLjQzMmMtMS42MTggMC0zLjI1My45LTMuMjUz%0D%0AIDIuNTI5LjAzMi43MDIuMzQ4IDEuMzYuODc2IDEuODI3LjUyNy40NjYgMS4yMjIuNyAxLjkyNS42%0D%0ANDhhMi4zOCAyLjM4IDAgMCAwIDIuMTctMS4wOGguMDUzdi45aDEuNjI3di00LjMyOWMwLTEuOTcx%0D%0ALTEuNS0zLjExNC0zLjQyNS0zLjExNGwtLjA0NS0uMDI3em0tLjIwOCA2LjE2NWMtLjU1MSAwLTEu%0D%0AMzItLjI3OS0xLjMyLS45NTQgMC0uOS45NTgtMS4xOTcgMS44MDgtMS4xOTdhMy4wMSAzLjAxIDAg%0D%0AMCAxIDEuNTM2LjM3OCAyLjA0IDIuMDQgMCAwIDEtMS45NzkgMS44bC0uMDQ1LS4wMjd6bTkuNjA2%0D%0ALTUuODk1bC0xLjkzNCA0Ljg3OGgtLjA1NEwxMDcuODMgMTkuOGgtMS44MDdsMy4wMDkgNi44MjIt%0D%0AMS43MTcgMy43ODloMS43NjJsNC42MjctMTAuNjExaC0xLjg4ek05Ni42MzMgMjdoMS42OVYxNS43%0D%0ANWgtMS42OVYyN3oiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjRkZGIiBzdHJva2U9IiNGRkYiIHN0%0D%0Acm9rZS13aWR0aD0iLjU2MyIgZD0iTTQyLjg1NCA5LjIxNmEyLjQzMyAyLjQzMyAwIDAgMS0uNjc4%0D%0AIDEuOCAyLjYzNSAyLjYzNSAwIDAgMS0xLjk4OC44MDEgMi44NDcgMi44NDcgMCAwIDEtMi42MS0x%0D%0ALjc1NiAyLjgyNyAyLjgyNyAwIDAgMSAuNjEzLTMuMDc3IDIuNzE3IDIuNzE3IDAgMCAxIDEuOTk3%0D%0ALS44MWMuMzgyLS4wMDEuNzYuMDc1IDEuMTExLjIyNS4zMjcuMTMxLjYxOC4zMzguODUuNjAzbC0u%0D%0ANDguNDc3YTEuODEgMS44MSAwIDAgMC0xLjQ4MS0uNjM5IDIuMSAyLjEgMCAwIDAtMS41MTUuNjM0%0D%0AYy0uMzk3LjQwNy0uNjEuOTU4LS41OSAxLjUyNmEyLjEyNCAyLjEyNCAwIDAgMCAxLjI4NSAxLjk4%0D%0AYy43OS4zNCAxLjcxLjE3MyAyLjMyOS0uNDIzLjI3OC0uMy40MzgtLjY5LjQ1Mi0xLjA5OGgtMS45%0D%0ANjF2LS42NDhoMi42M2MuMDI0LjEzNC4wMzYuMjcuMDM2LjQwNXptNC4xMzktMi4yNWgtMi40NHYx%0D%0ALjcxaDIuMjIzdi42NDhoLTIuMjIzdjEuNzFoMi40NHYuNjY2SDQzLjgzVjYuM2gzLjE2M3YuNjY2%0D%0Aem0yLjk2NCA0LjczNGgtLjY5NlY2Ljk2NmgtMS41MThWNi4zaDMuNzY4di42NjZoLTEuNTU0VjEx%0D%0ALjd6bTQuMjExIDBWNi4zaC42OTZ2NS40aC0uNjk2em0zLjc4NyAwaC0uNjk2VjYuOTY2SDU1Ljc0%0D%0AVjYuM2gzLjcyNHYuNjY2aC0xLjUxVjExLjd6bTguNTY3LS43MDJhMi44MjggMi44MjggMCAwIDEt%0D%0AMy45NzcgMCAyLjkwNyAyLjkwNyAwIDAgMSAwLTQuMDA1IDIuODA3IDIuODA3IDAgMCAxIDMuOTc3%0D%0AIDAgMi44OTggMi44OTggMCAwIDEgMCA0LjAwNXptLTMuNDYyLS40NWEyLjA5NCAyLjA5NCAwIDAg%0D%0AMCAyLjk0NyAwYy44LS44NzguOC0yLjIxOCAwLTMuMDk2YTIuMDk0IDIuMDk0IDAgMCAwLTIuOTQ3%0D%0AIDBjLS44Ljg3OC0uOCAyLjIxOCAwIDMuMDk2em01LjI0MiAxLjE1MlY2LjNoLjg1bDIuNjM4IDQu%0D%0AMjAzVjYuM2guNjk2djUuNGgtLjcyM2wtMi43NTYtNC40MDFWMTEuN2gtLjcwNXoiLz4KICAgICAg%0D%0AICA8cGF0aCBmaWxsPSJ1cmwoI2EpIiBkPSJNMS4zMDEuNDg2YTEuNzk1IDEuNzk1IDAgMCAwLS40%0D%0AMTUgMS4yNnYxOS45MDhjLS4wMjguNDU3LjEyLjkwOC40MTUgMS4yNmwuMDY0LjA2M0wxMi41NiAx%0D%0AMS44MzV2LS4yNjFMMS4zNjUuNDIzIDEuMy40ODZ6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4LjEz%0D%0AMyA2LjMpIi8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNiKSIgZD0iTTE2LjI2NyAxNS41NTJs%0D%0ALTMuNzA2LTMuNzE3di0uMjYxbDMuNzA2LTMuNzI2LjA4MS4wNDUgNC40MzcgMi41MTFjMS4yNjUu%0D%0ANzExIDEuMjY1IDEuODgxIDAgMi42MDFsLTQuNDE5IDIuNTAyLS4xLjA0NXoiIHRyYW5zZm9ybT0i%0D%0AdHJhbnNsYXRlKDguMTMzIDYuMykiLz4KICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2MpIiBkPSJN%0D%0AMTYuMzc1IDE1LjQ5OEwxMi41NjEgMTEuNyAxLjMwMSAyMi45MTRhMS40NzggMS40NzggMCAwIDAg%0D%0AMS44OC4wNTRsMTMuMjAzLTcuNDciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDguMTMzIDYuMykiLz4K%0D%0AICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2QpIiBkPSJNMTYuMzc1IDcuOTAyTDMuMTcyLjQzMmEx%0D%0ALjQ3OCAxLjQ3OCAwIDAgMC0xLjg4LjA1NEwxMi41NjIgMTEuN2wzLjgxMy0zLjc5OHoiIHRyYW5z%0D%0AZm9ybT0idHJhbnNsYXRlKDguMTMzIDYuMykiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjMDAwIiBk%0D%0APSJNMjQuNCAyMS43MTdsLTEzLjA5NSA3LjQyNWExLjUxNCAxLjUxNCAwIDAgMS0xLjgwNyAwbC0u%0D%0AMDYzLjA2My4wNjMuMDYzYTEuNTA1IDEuNTA1IDAgMCAwIDEuODA3IDBsMTMuMjAzLTcuNDctLjEw%0D%0AOC0uMDgxeiIgb3BhY2l0eT0iLjIiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjMDAwIiBkPSJNOS40%0D%0AMzUgMjkuMDg4YTEuNzk1IDEuNzk1IDAgMCAxLS40MTYtMS4yNnYuMTM1Yy0uMDI4LjQ1Ny4xMjEu%0D%0AOTA4LjQxNiAxLjI2bC4wNjMtLjA2My0uMDYzLS4wNzJ6bTE5LjQ4NC05LjkxOEwyNC40IDIxLjcx%0D%0AN2wuMDgxLjA4MSA0LjQzOC0yLjUwMmMuNTEyLS4yNC44NTctLjczNC45MDMtMS4yOTYtLjEwMy41%0D%0AMDgtLjQzNy45NC0uOTAzIDEuMTd6IiBvcGFjaXR5PSIuMTIiLz4KICAgICAgICA8cGF0aCBmaWxs%0D%0APSIjRkZGIiBkPSJNMTEuMzA1IDYuODU4TDI4LjkyIDE2LjgzYy40NjYuMjMuOC42NjIuOTAzIDEu%0D%0AMTdhMS41NzUgMS41NzUgMCAwIDAtLjkwMy0xLjI5NkwxMS4zMDUgNi43MzJDMTAuMDQgNi4wMjEg%0D%0AOS4wMSA2LjYxNSA5LjAxIDguMDU1di4xMzVjLjAyNy0xLjQ0OSAxLjA0LTIuMDQzIDIuMjk1LTEu%0D%0AMzMyeiIgb3BhY2l0eT0iLjI1Ii8+CiAgICA8L2c+Cjwvc3ZnPgo="
+    },
+  ],
+
+  Cursos: [
+    {
+      image: mt1,
+      name: "Productividad Total",
+      descripcion:"Hacer más tareas en menos tiempo, reducir el estrés y ser más productivo en el trabajo",
+      duracion:" 5 clases de 1 hora c/u",
+      calificacion:" ⭐⭐⭐⭐",
+      boton:"Iniciar Curso",
+    },
+    {
+      image: mt2,
+      name: "Organización Personal y Manejo Del Tiempo",
+      descripcion:"Desempeño laboral",
+      duracion:"4 horas",
+      calificacion:"⭐⭐⭐⭐⭐",
+      boton:"Iniciar Curso",
+    },
+    {
+      image: mt3,
+      name: "Controla Tu Estrés",
+      descripcion:"Maneja tu estrés con técnicas prácticas y fáciles de gestión del tiempo, mindfulness, asertividad",
+      duracion:"9 clases de 33min c/u",
+      calificacion:"⭐⭐⭐⭐",
+      boton:"Iniciar Curso",
+    },
+    {
+      image: mt4,
+      name: "Aprende a Manejar Tus Finanzas",
+      descripcion:"Tips para lograr un manejo de finanzas adecuado.",
+      duracion:"7 clases de 45min c/u",
+      calificacion:"⭐⭐⭐⭐",
+      boton:"Iniciar Curso",
+    },
+    {
+      image: mt5,
+      name: "Curso Administración De Empresas",
+      descripcion:"Aprender a manejar una empresa desde 0.",
+      duracion:"18 clases de 1 hora C/u",
+      calificacion:"⭐⭐⭐⭐",
+      boton:"Iniciar Curso",
+    },
+    {
+      image: mt6,
+      name: "Herramientas Para El Éxito De Empresas",
+      descripcion:"Bases organizacionales de una empresa.",
+      duracion:" 20 clases de 1 hora c/u",
+      calificacion:"⭐⭐⭐⭐",
+      boton:"Iniciar Curso",
+    },
+    {
+      image: mt7,
+      name: "Marketing Digital ",
+      descripcion:"Aprende las mejores estrategias de Marketing Digital desde cero. ",
+      duracion:"7 clases de 40min c/u",
+      calificacion:"⭐⭐⭐⭐⭐",
+      boton:"Iniciar Curso",
+    },
+    {
+      image: mt8,
+      name: "Diseña Tu Modelo De Negocio",
+      descripcion:"Diseña o mejora tu modelo de negocio en base a la metodología de design thinking",
+      duracion:"20 clases de 25 min c/u",
+      calificacion:"⭐⭐⭐⭐⭐",
+      boton:"Iniciar Curso",
+    },
+    {
+      image: mt9,
+      name: "Gestión Empresarial",
+      descripcion:"Indicadores empresariales y toma de decisiones",
+      duracion:"8 clases de 45 min c/u",
+      calificacion:"⭐⭐⭐⭐⭐",
+      boton:"Iniciar Curso",
     },
   ],
 
