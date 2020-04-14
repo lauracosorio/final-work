@@ -4,6 +4,7 @@ import "../Styles/Registro.css";
 
 
 function Registrese() {
+  
   return (
     <>
       <section className="container">
@@ -37,7 +38,7 @@ function Registrese() {
                   className="textinput textInput form-control"
                   required=""
                   minlength="2"
-                  data-purpose="fullname"
+                  data-purpose="email"
                   placeholder="Correo Electrónico"
                   id="id_email"
                   maxlength="64"

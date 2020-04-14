@@ -22,7 +22,7 @@ function Sesion() {
                   className="form-control facebook-"
             
                 ><i className="fab fa-facebook-f"></i>&nbsp;&nbsp;
-                  <a href="/" data-purpose="facebook-link" className="face-title" target="_blank">Continuar con Facebook</a>  
+                  <a href="https://m.facebook.com/login/?locale2=es_ES" data-purpose="facebook-link" className="face-title" target="_blank">Continuar con Facebook</a>  
                 </button>
               </div>
 
@@ -32,7 +32,7 @@ function Sesion() {
                   className="form-control google-"
             
                 ><i class="fab fa-google"></i>&nbsp;&nbsp;
-                  <a href="/" data-purpose="facebook-link" className="google-title" target="_blank">Continuar con Google</a>  
+                  <a href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&passive=1209600&osid=1&continue=https%3A%2F%2Fmyaccount.google.com%2Fintro%3Fhl%3Des&followup=https%3A%2F%2Fmyaccount.google.com%2Fintro%3Fhl%3Des&hl=es&csig=AF-SEnaqvzd2oumofwMy%3A1586877220&flowName=GlifWebSignIn&flowEntry=ServiceLogin" data-purpose="facebook-link" className="google-title" target="_blank">Continuar con Google</a>  
                 </button>
               </div>
 

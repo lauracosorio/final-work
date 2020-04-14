@@ -1,15 +1,13 @@
-import React, { Component } from "react";
-import { data } from "../Utils/mocks/data";
-import Registrese from "./Registrese.jsx"
+import React from "react";
+import Registrese from "./Registrese";
 
-class Registro extends Component {
-  render() {
-    return (
-      <div id="Content">
-        <Registrese
-        />
-      </div>
-    );
-  }
-}
+
+const Registro = () => {
+  return (
+    <>
+      <Registrese />
+    </>
+  );
+};
+
 export default Registro;
