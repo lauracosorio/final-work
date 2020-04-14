@@ -3,56 +3,57 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function NavPerfil(props) {
-  const { Perfil, Despliegue } = props;
+  const { Perfil, dataDespliegue } = props;
   
 
 return (
 <>
-      <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <Link to = "/Home" class="navbar-brand text-light" href="#">
+      <nav className="navbar navbar-expand-lg navbar-light bg-info">
+        <Link to = "/Home" className="navbar-brand text-light" href="#">
           Navbar
         </Link>
 
         <div
-          class="collapse navbar-collapse col-8 justify-content-center"
+          className="collapse navbar-collapse col-8 justify-content-center"
           id="navbarSupportedContent"
         >
-          <form class="form-inline ">
+          <form className="form-inline ">
             <input
-              class="form-control mr-sm-2 col-8"
+              className="form-control mr-sm-2 col-8"
               type="search"
               placeholder="Cursos, libros ..."
               aria-label="Search"
               size="70"
             />
-            <button class="btn bg-light my-2 mr-sm-5 ml-sm-2 col-2" type="submit">
+            <button className="btn bg-light my-2 mr-sm-5 ml-sm-2 col-2" type="submit">
               Buscar
             </button>
           </form>
         </div>
         <div className="nav-list">
-          <ul class="nav justify-content-end">
+          <ul className="nav justify-content-end">
             {Perfil.map((item, index) => {
               return (
-                <li class="nav-item" key={`nav-item-${index}`}>
-                  <Link to = {item.link} class="nav-link text-light ">
+                <li className="nav-item" key={`nav-item-${index}`}>
+                  <Link to = {item.link} className="nav-link text-light ">
                     {item.name}
                   </Link>
                 </li>
               );
             })}
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text-light "
+                className="nav-link dropdown-toggle text-light "
                 href="#"
                 id="navbarDropdown"
                 role="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                id="dropdownMenu2"
               >
                 <svg
-                  class="bi bi-person-fill"
+                  className="bi bi-person-fill"
                   width="2em"
                   height="2em"
                   viewBox="0 0 16 16"
@@ -67,22 +68,26 @@ return (
                 </svg>
                 Mi Perfil
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
 
-              {Despliegue.map((index, item) => {
+              {dataDespliegue.map((item, index) => {
                 return(
               
-                  <p class="dropdown-item text-dark"  href={item.link} key={`despliegue-${index}`}>
+                  <Link className="dropdown-item"  to={item.link} key={`despliegue-${index}`}>
+                  <li className="nav-item" key={`despliegue-item-${index}`}>
                   {item.title}
-                </p>
+                  </li>
+                </Link>
                
-                )
+                );
 
               })}
 
                
-                <div class="dropdown-divider"></div>
-            
+                <div className="dropdown-divider"></div>
+                <Link className="dropdown-item"  to="/Descripcion">
+                  Descripción
+                </Link>
               </div>
             </li>
           </ul>

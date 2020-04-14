@@ -14,7 +14,7 @@ function HeaderPerfil (){
         <div id="HeaderPerfil">
         <NavPerfil 
         Perfil = {data.HeaderPerfil}
-        Despliegue = {data.Despliegue}/>
+        dataDespliegue = {data.Despliegue}/>
         <Cursos/>
 
         <FooterPP/>

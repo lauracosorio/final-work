@@ -57,20 +57,17 @@ export const data = {
  Despliegue :[
     {
       title: "Mis Cursos",
-      link: "/"
+      link: "/MisCursos"
     },
     {
       title: "Mis Libros",
-      link: "/"
+      link: "/MisLibros"
     },
     {
       title: "Asesorias",
-      link: "/"
+      link: "/Asesorias"
     },
-    {
-      title: "Configuraciones",
-      link: "/"
-    }
+
 
   ],
 
