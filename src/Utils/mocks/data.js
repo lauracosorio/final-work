@@ -33,17 +33,6 @@ export const data = {
     
   ],
 
-  Despliegue: [
-    {
-      title: "Cursos",
-      link: "/Cursos"
-    },
-    {
-      title: "Libros",
-      link: "/Libros"
-    }
-  ],
-
   Footer: [
     {
       name: "Facebook",
