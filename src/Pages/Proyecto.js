@@ -20,19 +20,19 @@ function Proyecto(props) {
   return (
     <BrowserRouter>
       <Switch>
-      {/* <Layout>
+      <Layout>
         
         <Route exact path="/" component={Home} />
-        <Route path="/Home" component={Home} /> */}
+        <Route path="/Home" component={Home} />
         {/* <Route path="/Perfil" component={Perfil} /> */}
-        {/* <Route path="/Iniciar" component={Iniciar} />
+        <Route path="/Iniciar" component={Iniciar} />
         <Route path="/Contraseña" component={Contraseña} />
         <Route path="/Registrese" component={Registrese} />
         <Route path="/Cursos" component={Cursos} />
         <Route path="/Libros" component={Libros} />
         </Layout> 
-     */}
-      <ContentP />
+    
+
       
       </Switch>
     </BrowserRouter>

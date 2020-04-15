@@ -3,9 +3,6 @@ import "../Styles/Content.css";
 
 function Perfil( props ) {
  
-const { tipodia } = props;
-console.log(tipodia)
-
   return (
     <>
     <form className="">

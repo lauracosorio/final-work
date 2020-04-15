@@ -7,7 +7,6 @@ const ContentP = () => {
     return (
     <>
         <Perfil
-        tipodia = {data.dias}
         />
         
   </>

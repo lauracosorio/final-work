@@ -482,20 +482,4 @@ export const data = {
     }
   ],
 
-  dia: [
-    {
-      type: "email",
-      name: "email",
-      purpose: "fullemail",
-      placeholder: "Correo Electrónico",
-      id: "id_email"
-    },
-    {
-      type: "password",
-      name: "password",
-      purpose: "password",
-      placeholder: "Contraseña",
-      id: "id_password"
-    }
-  ],
 };
