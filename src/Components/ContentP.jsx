@@ -7,7 +7,10 @@ const ContentP = () => {
     return (
     <>
         <Perfil
-        />
+        perfil = {data.Perfil}
+        horario = {data.Horario}
+        opciones = {data.Opciones}
+        title = {data.Title}/>
         
   </>
     );

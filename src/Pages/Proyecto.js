@@ -11,10 +11,8 @@ import Libros from "../Components/Libros.jsx";
 import ContentPP from "../Components/ContentPP.jsx";
 import FooterPP from "../Components/FooterPP.jsx";
 import HeaderPP from "../Components/HeaderPP.jsx"
-import Registro from "../Components/Registro.jsx";
-import ContentP from "../Components/Perfil.jsx";
-import ContentPerfil from "../Components/ContentP.jsx";
-// import Iniciar from "../Components/Iniciar-sesion.jsx"
+import ConfiguracionP from "../Components/ConfiguracionP.jsx";
+
 
 function Proyecto(props) {
   return (
@@ -33,7 +31,7 @@ function Proyecto(props) {
         </Layout> 
     
 
-      
+     
       </Switch>
     </BrowserRouter>
   );
