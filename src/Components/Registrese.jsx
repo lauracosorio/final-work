@@ -4,7 +4,7 @@ import "../Styles/Registro.css";
 
 
 function Registrese() {
-  
+
   return (
     <>
       <section className="container">
@@ -17,19 +17,6 @@ function Registrese() {
             <hr />
 
             <form className="formulario  col-sm-7 col-md-7 col-lg-7 ">
-              <div className="form-group  ">
-                <input
-                  type="text"
-                  name="fullname"
-                  className="textinput textInput form-control nombre"
-                  required=""
-                  minlength="2"
-                  data-purpose="fullname"
-                  placeholder="Nombre completo"
-                  id="id_fullname"
-                  maxlength="64"
-                ></input>
-              </div>
 
               <div className="form-group">
                 <input
