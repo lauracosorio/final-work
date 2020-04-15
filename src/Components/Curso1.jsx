@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../Styles/ContentCurso.css";
 import mdvideo from "../Images/mdvideo.jpg"
 
-class ContentCurso extends Component {
+class Curso1 extends Component {
     render() {
         return (
         <>
@@ -105,4 +105,4 @@ class ContentCurso extends Component {
   }
 }  
 
-export default ContentCurso;
+export default Curso1;
