@@ -50,19 +50,13 @@ body {
   text-decoration: none !important;
 }
 
-button {
-  font-size: 16px;
-  font-weight: 600;
-  height: 48px;
-  margin-bottom: 16px;
-  width: 100%;
-  /* background-color: rgb(80, 164, 167) !important;
-    border: rgb(80, 164, 167) !important; */
-}
+
 
 .facebook- {
   background-color: #1a538a !important;
   color: white !important;
+  padding-left: 0px !important;
+
 }
 
 .face-title {
@@ -101,3 +95,4 @@ input:focus {
 .google-:hover {
   background-color: #df3838 !important;
 }
+

@@ -13,21 +13,21 @@ function Navbar(props) {
 
 
       <nav className="navbarset navbar navbar-expand-lg navbar-light bg-info ">
-        <Link to ="/Home" className="navbar-brand text-light" href="#">
+        <Link to ="/Home" className="navbar-brand text-light col-1" href="#">
           Nombre pag
         </Link>
 
         <div
-          className="collapse navbar-collapse col-8 justify-content-center"
+          className="collapse navbar-collapse col-6 justify-content-center"
           id="navbarSupportedContent"
         >
           <form className="form-inline ">
             <input
-              className="form-control mr-sm-2 col-8"
+              className="form-control mr-sm-2 col-6"
               type="search"
               placeholder="Cursos, libros ..."
               aria-label="Search"
-              size="70"
+              size="50"
             />
             <button className="btn bg-light my-2 mr-sm-5 ml-sm-2 col-2" type="submit">
               Buscar
@@ -36,7 +36,7 @@ function Navbar(props) {
         </div>
    
         <div className=" navbar" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto ">
+          <ul className="navbar-nav mr-auto col-12 ">
             {dataNav.map((item, index) => {
               return (
                 <Link to= {item.link} className="nav-link text-light titulo">

@@ -14,7 +14,7 @@ function Sesion() {
             </h6>
             <hr />
 
-            <form className="formulario  col-sm-7 col-md-7 col-lg-7 ">
+            <form className="formulario  col-12 col-sm-7 col-md-8 col-lg-7 ">
 
             <div className="form-group">
                 <button
