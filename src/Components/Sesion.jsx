@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import "../Styles/Sesion.css";
 
 
-function Sesion() {
+function Sesion(props) {
+
+  const {redesSociales, iniciarSesion } = props
   return (
     <>
       <section className="container">
@@ -17,52 +19,45 @@ function Sesion() {
             <form className="formulario  col-12 col-sm-7 col-md-8 col-lg-7 ">
 
             <div className="form-group">
-                <button
+              {redesSociales.map((item, index) => {
+
+                return(
+<button
                   type="submit"
-                  className="form-control facebook-"
-            
-                ><i className="fab fa-facebook-f"></i>&nbsp;&nbsp;
-                  <a href="https://m.facebook.com/login/?locale2=es_ES" data-purpose="facebook-link" className="face-title" target="_blank">Continuar con Facebook</a>  
+                  className={item.class}
+                  key={`buttons-${index}`}
+                ><i className={item.icon}></i>&nbsp;&nbsp;
+                  <a href={item.Link} data-purpose={item.purpose} className={item.linkName} target="_blank">{item.title}</a>  
                 </button>
+                )
+              })}
+                
               </div>
 
-              <div className="form-group">
-                <button
-                  type="submit"
-                  className="form-control google-"
-            
-                ><i class="fab fa-google"></i>&nbsp;&nbsp;
-                  <a href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&passive=1209600&osid=1&continue=https%3A%2F%2Fmyaccount.google.com%2Fintro%3Fhl%3Des&followup=https%3A%2F%2Fmyaccount.google.com%2Fintro%3Fhl%3Des&hl=es&csig=AF-SEnaqvzd2oumofwMy%3A1586877220&flowName=GlifWebSignIn&flowEntry=ServiceLogin" data-purpose="facebook-link" className="google-title" target="_blank">Continuar con Google</a>  
-                </button>
+              <div className="form-group col ml-n3">
+
+              {iniciarSesion.map((item, index) => {
+                  return (
+                    <>
+                      <input
+                      key={`registro-${index}`}
+                        type={item.type}
+                        name={item.name}
+                        className="textinput textInput form-control m-3"
+                        required=""
+                        minlength="2"
+                        data-purpose={item.purpose}
+                        placeholder={item.placeholder}
+                        id={item.id}
+                        maxlength="64"
+                      ></input>
+                    </>
+                  );
+                })}
+               
               </div>
 
-              <div className="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  className="textinput textInput form-control"
-                  required=""
-                  minlength="2"
-                  data-purpose="fullname"
-                  placeholder="Correo Electrónico"
-                  id="id_email"
-                  maxlength="64"
-                ></input>
-              </div>
-
-              <div className="form-group">
-                <input
-                  type="password"
-                  name="password"
-                  className="textinput textInput form-control"
-                  required=""
-                  minlength="2"
-                  data-purpose="password"
-                  placeholder="Contraseña"
-                  id="id_password"
-                  maxlength="64"
-                ></input>
-              </div>
+              
 
               <p className="">
                 <Link to="/Perfil">

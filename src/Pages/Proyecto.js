@@ -11,24 +11,28 @@ import Libros from "../Components/Libros.jsx";
 import ContentPP from "../Components/ContentPP.jsx";
 import FooterPP from "../Components/FooterPP.jsx";
 import HeaderPP from "../Components/HeaderPP.jsx"
+import Registro from "../Components/Registro.jsx";
+import ContentP from "../Components/Perfil.jsx";
+import ContentPerfil from "../Components/ContentP.jsx";
+// import Iniciar from "../Components/Iniciar-sesion.jsx"
 
 function Proyecto(props) {
   return (
     <BrowserRouter>
       <Switch>
-      <Layout>
+      {/* <Layout>
         
         <Route exact path="/" component={Home} />
-        <Route path="/Home" component={Home} />
+        <Route path="/Home" component={Home} /> */}
         {/* <Route path="/Perfil" component={Perfil} /> */}
-        <Route path="/Iniciar" component={Iniciar} />
+        {/* <Route path="/Iniciar" component={Iniciar} />
         <Route path="/Contraseña" component={Contraseña} />
         <Route path="/Registrese" component={Registrese} />
         <Route path="/Cursos" component={Cursos} />
         <Route path="/Libros" component={Libros} />
         </Layout> 
-    
-      
+     */}
+      <ContentP />
       
       </Switch>
     </BrowserRouter>

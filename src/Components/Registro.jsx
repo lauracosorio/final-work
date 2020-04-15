@@ -7,6 +7,7 @@ const Registro = () => {
   return (
     <>
       <Registrese 
+      registrese = {data.Registrese}
      />
     </>
   );

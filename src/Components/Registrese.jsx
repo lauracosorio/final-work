@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Registro.css";
 
-
-function Registrese() {
-
+function Registrese(props) {
+  const { registrese } = props;
+console.log(registrese)
   return (
     <>
       <section className="container">
@@ -17,38 +17,32 @@ function Registrese() {
             <hr />
 
             <form className="formulario  col-sm-7 col-md-7 col-lg-7 ">
-
-              <div className="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  className="textinput textInput form-control"
-                  required=""
-                  minlength="2"
-                  data-purpose="email"
-                  placeholder="Correo Electrónico"
-                  id="id_email"
-                  maxlength="64"
-                ></input>
+              <div className="form-group mb-4">
+                {registrese.map((item, index) => {
+                  return (
+                    <>
+                      <input
+                      key={`registro-item-${index}`}
+                        type={item.type}
+                        name={item.name}
+                        className="textinput textInput form-control m-3"
+                        required=""
+                        minLength="2"
+                        data-purpose={item.purpose}
+                        placeholder={item.placeholder}
+                        id={item.id}
+                        maxLength="64"
+                      ></input>
+                    </>
+                  );
+                })}
               </div>
 
-              <div className="form-group">
-                <input
-                  type="password"
-                  name="password"
-                  className="textinput textInput form-control"
-                  required=""
-                  minlength="2"
-                  data-purpose="password"
-                  placeholder="Contraseña"
-                  id="id_password"
-                  maxlength="64"
-                ></input>
-              </div>
+           
 
               <p className="">
                 <Link to="/Perfil">
-                  <button className="btn btn-info" type="submit">
+                  <button className="btn btn-info ml-3" type="submit">
                     Regístrate
                   </button>
                 </Link>
