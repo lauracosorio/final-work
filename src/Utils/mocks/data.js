@@ -130,25 +130,31 @@ export const data = {
   box: [
     {
       image: curso1,
-      title: "Curso de Marketing",
+      name: "Curso de Marketing",
       description:
-        "El Marketing Digital o Marketing Online es el conjunto de estrategias direccionadas a la comunicación y comercialización electrónica de productos y servicios.Ahora voy a explicarte qué es este concepto.",
-      button: "Añadir a Favoritos"
+        "Direccionadas a la comunicación y comercialización electrónica de productos y servicios",
+      duracion:" 12 clases de 1 hora c/u",
+      calificacion:" ⭐⭐⭐⭐⭐",
+      boton:"Iniciar Curso",
     },
     {
       image: curso2,
-      title: "Curso de Manejo del Tiempo",
+      name: "Curso de Manejo del Tiempo",
       description:
-        "Al momento de trabajar intentamos hacer todo lo posible por ser productivos en nuestro día a día, y muchas veces no lo logramos. Pero ahora ya puedes serlo con este curso virtual.",
-      button: "Añadir a Favoritos"
+        "Productivividad y acertividad en nuestro día a día.",
+        duracion:" 10 clases de 1 hora c/u",
+        calificacion:" ⭐⭐⭐⭐⭐",
+        boton:"Iniciar Curso",
     },
     {
       image: curso3,
-      title: "Curso de Manejo del Personal",
+      name: "Curso de Manejo del Personal",
       description:
-        " El manejo de personal es lo más importante en una empresa, define el éxito que pueda llegar a tener una empresa, por tanto es necesario que la empresa sepa manejar el personal adecuadamente.",
-      button: "Añadir a Favoritos"
-    }
+        "Manejo adecuado del personal de tu empresa.",
+        duracion:" 18 clases de 45 hora c/u",
+        calificacion:" ⭐⭐⭐⭐⭐",
+        boton:"Iniciar Curso",
+    },
   ],
 
   span: [
@@ -237,6 +243,33 @@ export const data = {
   ],
 
   Cursos: [
+    {
+      image: curso1,
+      name: "Curso de Marketing",
+      description:
+        "Direccionadas a la comunicación y comercialización electrónica de productos y servicios",
+      duracion:" 12 clases de 1 hora c/u",
+      calificacion:" ⭐⭐⭐⭐⭐",
+      boton:"Iniciar Curso",
+    },
+    {
+      image: curso2,
+      name: "Curso de Manejo del Tiempo",
+      description:
+        "Productivividad y acertividad en nuestro día a día.",
+        duracion:" 10 clases de 1 hora c/u",
+        calificacion:" ⭐⭐⭐⭐⭐",
+        boton:"Iniciar Curso",
+    },
+    {
+      image: curso3,
+      name: "Curso de Manejo del Personal",
+      description:
+        "Manejo adecuado del personal de tu empresa.",
+        duracion:" 18 clases de 45 hora c/u",
+        calificacion:" ⭐⭐⭐⭐⭐",
+        boton:"Iniciar Curso",
+    },
     {
       image: mt1,
       name: "Productividad Total",
