@@ -7,7 +7,7 @@ import Registrese from "../Components/Registrese.jsx"
 import Home from "../Components/Home.jsx";
 import Iniciar from "../Components/Iniciar-sesion.jsx";
 import Cursos from "../Components/Cursos.jsx";
-
+import Libros from "../Components/Libros.jsx"
 
 
 
@@ -25,6 +25,7 @@ function Proyecto () {
           <Route path="/Contraseña" component={Contraseña} />
           <Route path="/Registrese" component={Registrese} />
           <Route path = "/Cursos" component= {Cursos} />
+          <Route path = "/Libros" component = {Libros} />
           
         </Layout>
         
