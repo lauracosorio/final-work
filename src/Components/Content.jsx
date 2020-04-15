@@ -82,12 +82,13 @@ function Content(props) {
         </center>
       </div>
       <div className="row justify-content-center text-center conjunto col-12">
+
       {dataBox.map((item, index) => {
           return (
             <div
               className="border-info col-xs-12 col-sm-6 col-md-3 col-lg-3 card caja"
-              key={`marketingDigital-${index}`}
-            >
+              key={`marketingDigital-${index}`}>
+
               <img
                 src={item.image}
                 className="card-img-top"
@@ -103,6 +104,7 @@ function Content(props) {
           <span role="img" arial-label="">{item.calificacion}</span> </p>
                 <Link to = "/Registrese" className="btn btn-info">
                   {item.boton}
+
                 </Link>
               </div>
             </div>
