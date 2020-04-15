@@ -101,7 +101,7 @@ function Content(props) {
           <p className="duracion">{item.duracion}</p>
          <p>
           <span role="img" arial-label="">{item.calificacion}</span> </p>
-                <Link to = "/" className="btn btn-info">
+                <Link to = "/Registrese" className="btn btn-info">
                   {item.boton}
                 </Link>
               </div>

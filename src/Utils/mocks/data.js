@@ -423,9 +423,7 @@ export const data = {
         "El vicepresidente sénior de gestión de personas de Google revela por primera vez una fórmula de trabajo que se ha convertido en leyenda global. «Pasamos más tiempo trabajando que haciendo cualquier otra cosa. No resulta lógico que el trabajo resulte una experiencia desmotivadora y poco humana.» Esta la opinión de Laszlo Bock, responsable de gestión de personas de una empresa tan revolucionaria como Google. Esta idea es el eje de La nueva fórmula del trabajo, un manifiesto rompedor acerca de nuestra capacidad para cambiar la forma en la que trabajamos y vivimos.",
         comprar: "https://librerianacional.com/producto/75a5fe4f-6b55-13fb-f99b-555bae21794f"
     },
-   
   ],
-
 
   // Registrese: [
   //   {

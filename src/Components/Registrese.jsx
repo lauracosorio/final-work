@@ -4,6 +4,7 @@ import "../Styles/Registro.css";
 
 
 function Registrese() {
+  
   return (
     <>
       <section className="container">
