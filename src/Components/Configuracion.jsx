@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import config from "../Styles/config.css";
+import  "../Images/config.jpg";
 
 
 
@@ -8,7 +9,7 @@ class Configuracion extends Component {
     return (
         <>
         <div className="container">
-            <img src="config"/>
+            <img src="../images/config.jpg"/>
 
 
             <form>
@@ -36,7 +37,7 @@ class Configuracion extends Component {
 
 
 <form>
-<h5 className="text-center spacetext text-info">Para cambiar tu nombre de usuario</h5>
+<h5 className="text-center spacetext2 text-info">Para cambiar tu nombre de usuario</h5>
   <div class="form-row align-items-center">
       
   <div className="spaceform2 spacetext col-auto">
@@ -64,7 +65,7 @@ class Configuracion extends Component {
 </form>
 
 
-            <div className="spacetext accordion" id="accordionExample">
+            <div className="spacetext2 accordion" id="accordionExample">
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
