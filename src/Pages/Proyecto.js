@@ -11,6 +11,7 @@ import Libros from "../Components/Libros.jsx";
 import ContentPP from "../Components/ContentPP.jsx";
 import FooterPP from "../Components/FooterPP.jsx";
 import HeaderPP from "../Components/HeaderPP.jsx"
+import ConfiguracionP from "../Components/ConfiguracionP.jsx";
 
 function Proyecto(props) {
   return (
@@ -26,8 +27,8 @@ function Proyecto(props) {
         <Route path="/Registrese" component={Registrese} />
         <Route path="/Cursos" component={Cursos} />
         <Route path="/Libros" component={Libros} />
-        </Layout> 
-    
+        </Layout>  
+
       
       
       </Switch>
