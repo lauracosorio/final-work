@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import config from "../Images/config.jpg";
+import config from "../Styles/config.css";
+
 
 
 class Configuracion extends Component {
@@ -11,8 +12,8 @@ class Configuracion extends Component {
 
 
             <form>
-                <h6 className="text-info">Para borrar un curso o libro</h6>
-  <div class="form-row">
+                <h5 className="text-center text-info">Para borrar un curso o libro</h5>
+  <div className="form-row spacetext">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Usuario</label>
       <input type="email" class="form-control" id="inputEmail4"/>
@@ -30,15 +31,15 @@ class Configuracion extends Component {
       </select>
     </div>
   
-  <button type="submit" class=" col-4 btn btn-info">Eliminar</button>
+  <button type="submit" className="form1 btn btn-info">Eliminar</button>
 </form>
 
 
 <form>
-<h6 className="text-info">Para cambiar tu nombre de usuario</h6>
+<h5 className="text-center spacetext text-info">Para cambiar tu nombre de usuario</h5>
   <div class="form-row align-items-center">
       
-  <div class="col-auto">
+  <div className="spaceform2 spacetext col-auto">
       <label class="sr-only" for="inlineFormInputGroup">Usuario</label>
       <div class="input-group mb-2">
         <div class="input-group-prepend">
@@ -47,7 +48,7 @@ class Configuracion extends Component {
         <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Usuario"/>
       </div>
     </div>
-    <div class="col-auto">
+    <div class="col-auto spacetext">
       <label class="sr-only" for="inlineFormInputGroup">Usuario Nuevo</label>
       <div class="input-group mb-2">
         <div class="input-group-prepend">
@@ -56,14 +57,14 @@ class Configuracion extends Component {
         <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Usuario Nuevo"/>
       </div>
     </div>
-    <div class="col-auto">
-      <button type="submit" class="btn btn-info mb-2">Cambiar</button>
+    <div class="col-auto spacetext">
+      <button type="submit" className="form2 btn btn-info mb-2">Cambiar</button>
     </div>
   </div>
 </form>
 
 
-            <div class="accordion" id="accordionExample">
+            <div className="spacetext accordion" id="accordionExample">
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
@@ -165,6 +166,11 @@ class Configuracion extends Component {
   </div>
   
 </div>
+
+<div className="spacetext2 spacetext text-center">
+<h6>¿No resolvimos tus dudas? Escribenos a este correo:</h6>
+ <h6 className="font-weight-bold text-info">nosotrosempresa@gmail.com</h6>
+ </div>
 
         </div>
         </>
