@@ -11,6 +11,12 @@ import mejora from "../../Images/gorra.png";
 import libro1 from "../../Images/libro1.jpg";
 import libro2 from "../../Images/libro2.jfif";
 import libro3 from "../../Images/libro3.jpg";
+import libro4 from "../../Images/libro4.jpg";
+import libro5 from "../../Images/libro5.jpg";
+import libro6 from "../../Images/libro6.jpg";
+import libro7 from "../../Images/libro7.jpg";
+import libro8 from "../../Images/libro8.jpg";
+import libro9 from "../../Images/libro9.jpg";
 import mt1 from "../../Images/mt-1.jpg";
 import mt2 from "../../Images/mt-2.jpg";
 import mt3 from "../../Images/mt-3.jpg";
@@ -309,6 +315,82 @@ export const data = {
       calificacion:"⭐⭐⭐⭐⭐",
       boton:"Iniciar Curso",
     },
+  ],
+
+  Libros: [
+    {
+      image: libro1,
+      title: "Marketing Extraordinario",
+      button: "Añadir a favoritos",
+      description:
+        "Las pequeñas y medianas empresas son fundamentales en el desarrollo económico de un país, principalmente porque tienen una  facilidad natural para generar empleo, distribuir a nivel regional, entre otras virtudes. Por ello es necesario promover el desarrollo de las pymes. Sin embargo, muy pocas empresas logran superar los tres años de vida y fracasan. Ante este escenario, el autor decide buscar las estructuras del mercado y las dinámicas bajo las cuales surgen y mueren tantas pymes. ",
+        comprar: "https://librerianacional.com/producto/357071"
+    },
+    {
+      image: libro2,
+      title: "Mañanas Milagrosas",
+      button: "Añadir a favoritos",
+      description:
+        "Para tener éxito y lograr la mejor versión de ti mismo debes asumir toda la responsabilidad por tus acciones y enfocar una parte de tu tiempo y esfuerzo cada dia en tu desarrollo personal. La “Mañana Milagrosa” es un método para crear ese tiempo y desarrollar las áreas que forman tu vida (Fisica, Intelectual, Emocional y Espiritual). El método consiste de 6 herramientas: Silencio, Afirmaciones, Visualizar, Ejercicio, Leer y Escribir.",
+        comprar: "https://librerianacional.com/producto/357071"
+    },
+    {
+      image: libro3,
+      title: "El arte de gestionar el tiempo",
+      button: "Añadir a favoritos",
+      description:
+        " En este libro, Gustavo Piera te invita a una de las reuniones de trabajo más importantes de tu vida, una reunión contigo mismo y con el siguiente orden del día: decidir sin interferencias ni imposiciones cuáles son tus objetivos en la vida y cómo vas a invertir tu tiempo para lograrlos. Dado que el tiempo es un bien limitado, resulta sensato reflexionar en qué vale la pena invertirlo para obtener los máximos beneficios personales.",
+        comprar: "https://librerianacional.com/producto/357071"
+    },
+    {
+      image: libro5,
+      title: "Padre rico, padre pobre",
+      button: "Añadir a favoritos",
+      description:
+        " El autor transformó radicalmente la forma en que millones de personas alrededor del mundo perciben el concepto del dinero. Con perspectivas que contradicen el conocimiento convencional, Robert se ha ganado una gran reputación por hablar claro, ser irreverente y tener valor. Es reconocido alrededor del mundo como un defensor apasionado de la educación financiera.",
+        comprar: "https://librerianacional.com/producto/351808"
+    },
+    {
+      image: libro4,
+      title: "El libro negro del emprendedor",
+      button: "Añadir a favoritos",
+      description:
+        " Agrupados en cinco grandes temas (la persona que emprende, la idea de negocio, los socios, el sector de actividad y la gestión del crecimiento).  El futuro emprendedor hallará aquí una prueba de fuego que le ayudará a dilucidar si reúne las condiciones para dar ese paso tan importante que supone emprender.",
+        comprar: "https://librerianacional.com/producto/357071"
+    },
+    {
+      image: libro6,
+      title: "Los 7 hábitos de la gente altamente efectiva",
+      button: "Añadir a favoritos",
+      description:
+        "Un curso dividido en siete etapas que el lector deberá adaptar a su personalidad y a su vida. El autor se sirve de anécdotas destinadas a hacernos reflexionar sobre cada uno de nuestros actos y sobre el modo de acceder al cambio. El resultado es el desarrollo del propio carácter, de la integridad humana necesarias para transformar nuestro universo.",
+        comprar: "https://librerianacional.com/producto/319486"
+    },
+    {
+      image: libro7,
+      title: "Gestión del talento humano y del conocimiento",
+      button: "Añadir a favoritos",
+      description:
+        "Esta nueva edición de Costos y presupuestos, brinda las herramientas de tecnologías de información que facilitan el manejo de los costos y recursos financieros (elaboración de presupuestos, ajuste de cifras, preparación de proyectos de producción de bienes o servicios) a los responsables de sistemas productivos. La obra busca desarrollar en el lector habilidades para aplicar herramientas de planeación y control de costos, y criterios para juzgar sus resultados; diseñar y aplicar sistemas de Costeo, Financiación y Presupuesto de procesos productivos y el apoyo de herramientas computarizados.",
+        comprar: "https://librerianacional.com/producto/348608"
+    },
+    {
+      image: libro8,
+      title: "Controla tu tiempo, controla tu vida",
+      button: "Añadir a favoritos",
+      description:
+        "«El tiempo es dinero», dice un sabio refrán. En la actualidad, muchos de nosotros sentimos que nunca tenemos suficiente de ese precioso bien. En Controla tu tiempo, Controla tu vida, Brian Tracy, propone una estrategia nueva y brillante sobre cómo administrar nuestro tiempo y lograr mucho más día a día y con mayor rapidez y eficiencia. Basado en sus más recientes investigaciones científicas sobre productividad y en sus décadas de experiencia, el autor presenta este revolucionario programa en el cual le  asigana al tiempo diez categorías de prioridades.",
+        comprar: "https://librerianacional.com/producto/controla-tu-tiempo-controla-tu-vida"
+    },
+    {
+      image: libro9,
+      title: "La nueva formula del trabajo",
+      button: "Añadir a favoritos",
+      description:
+        "El vicepresidente sénior de gestión de personas de Google revela por primera vez una fórmula de trabajo que se ha convertido en leyenda global. «Pasamos más tiempo trabajando que haciendo cualquier otra cosa. No resulta lógico que el trabajo resulte una experiencia desmotivadora y poco humana.» Esta la opinión de Laszlo Bock, responsable de gestión de personas de una empresa tan revolucionaria como Google. Esta idea es el eje de La nueva fórmula del trabajo, un manifiesto rompedor acerca de nuestra capacidad para cambiar la forma en la que trabajamos y vivimos.",
+        comprar: "https://librerianacional.com/producto/75a5fe4f-6b55-13fb-f99b-555bae21794f"
+    },
+   
   ],
 
 
