@@ -198,38 +198,21 @@ export const data = {
     },
   ],
 
-   input:[
-     {
-       name: "Correo Electronico",
-       placeholder: "Correo Electronico"
-     }
-   ],
-
-
-
-   checkbox: [
-     {
-       title: "Semana"
-     },
-     {
-       title: "Fin de Semana"
-     }
-    ],
-
-    checkbox2:[
-     {
-       name: "Mañana",
-       title:"Mañana"
-     },
-     {
-       name: "Tarde",
-       title: "Tarde"
-     },
-     {
-       name: "Noche",
-       title: "Noche"
-     }
-   ]
+  // Titulo: [
+  //   {
+    
+  //    title: "Seleciona tu facilidad diaria"
+  //   },
+  //   {
+   
+  //     title: "Seleciona tu facilidad horaria "
+  //   },
+  //   {
+   
+  //     title: "Selecciona el curso en especifico "
+  //   },
+    
+  // ], 
 
   
   // Registrese: [

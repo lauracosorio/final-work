@@ -5,12 +5,8 @@ import ContentP from "./ContentP.jsx"
 class ContentPerfil extends Component {
   render() {
     return (
-      <div id="ContentP">
-        <ContentP
-        datainput = {data.input}  
-        datacheckbox = {data.checkbox}
-        datacheckbox2 = {data.checkbox2}
-         />
+      <div id="Container justify-content-center">
+        <ContentP/>
       </div>
     );
   }
