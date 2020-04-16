@@ -593,3 +593,42 @@ export const data = {
     }
   ]
 };
+
+//  temas1:[
+//   {
+//     name: "1. INTRODUCCIÓN "
+//   },
+//   {
+//     name: "2. EL MARKETING DIGITAL"
+//   },
+//   {
+//     name: "3. PLAN DE MARKETING DIGITAL"
+//   },
+//   {
+//     name: "4. MARKETING DE CONTENIDOS"
+//   },
+//   {
+//     name: "5. SOCIAL MEDIA "
+//   },
+//   {
+//     name: "6. EMAIL MARKETING"
+//   },
+//   {
+//     name: "7. SEO"
+//   },
+//   {
+//     name: "8. SEM"
+//   },
+//   {
+//     name: "9. VIDEO MARKETING"
+//   },
+//   {
+//     name: "10. ANALÍTICA "
+//   },
+//   {
+//     name: "11. AUTOMATIZACIÓN"
+//   },
+//   {
+//     name: "12. INDICADORES"
+//   },
+// ],

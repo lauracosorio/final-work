@@ -10,8 +10,10 @@ import Cursos from "../Components/Cursos.jsx";
 import Libros from "../Components/Libros.jsx";
 import ContentPP from "../Components/ContentPP.jsx";
 import FooterPP from "../Components/FooterPP.jsx";
+
 import HeaderPP from "../Components/HeaderPP.jsx"
 import ConfiguracionP from "../Components/ConfiguracionP.jsx";
+
 
 
 function Proyecto(props) {
@@ -30,8 +32,6 @@ function Proyecto(props) {
         <Route path="/Libros" component={Libros} />
         </Layout> 
     
-
-     
       </Switch>
     </BrowserRouter>
   );
