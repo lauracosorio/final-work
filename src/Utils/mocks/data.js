@@ -245,7 +245,7 @@ export const data = {
     {
       image: curso1,
       name: "Curso de Marketing",
-      description:
+      descripcion:
         "Direccionadas a la comunicación y comercialización electrónica de productos y servicios",
       duracion: " 12 clases de 1 hora c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
@@ -254,7 +254,7 @@ export const data = {
     {
       image: curso2,
       name: "Curso de Manejo del Tiempo",
-      description: "Productivividad y acertividad en nuestro día a día.",
+      descripcion: "Productivividad y acertividad en nuestro día a día.",
       duracion: " 10 clases de 1 hora c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
       boton: "Iniciar Curso"
@@ -262,7 +262,7 @@ export const data = {
     {
       image: curso3,
       name: "Curso de Manejo del Personal",
-      description: "Manejo adecuado del personal de tu empresa.",
+      descripcion: "Manejo adecuado del personal de tu empresa.",
       duracion: " 18 clases de 45 hora c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
       boton: "Iniciar Curso"

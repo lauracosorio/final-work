@@ -3,8 +3,20 @@ import { Link } from "react-router-dom";
 import "../Styles/Registro.css";
 
 function Registrese(props) {
-  const { registrese } = props;
-console.log(registrese)
+  const { registrese, onChange, name, password, email, formValues} = props;
+  console.log(registrese);
+
+  // state = {
+  //   loading: false,
+  //   form: {
+  //     firstname: "",
+  //     email: "",
+  //     contraseña: "",
+  //   }
+  // }
+
+  // handleChange = e =>
+
   return (
     <>
       <section className="container">
@@ -18,34 +30,62 @@ console.log(registrese)
 
             <form className="formulario  col-sm-7 col-md-7 col-lg-7 ">
               <div className="form-group mb-4">
-                {registrese.map((item, index) => {
-                  return (
-                    <>
+               
                       <input
-                      key={`registro-item-${index}`}
-                        type={item.type}
-                        name={item.name}
+                   onChange= {props.onChange}
+                        type="text"
+                        name="fullname"
                         className="textinput textInput form-control m-3"
                         required=""
                         minLength="2"
-                        data-purpose={item.purpose}
-                        placeholder={item.placeholder}
-                        id={item.id}
+                        data-purpose="fullname"
+                        placeholder="Nombre Completo"
+                        id="id_fullname"
                         maxLength="64"
+                        value={formValues.name}
+                        required
                       ></input>
-                    </>
-                  );
-                })}
+                 
+              </div>
+              <div className="form-group mb-4">
+               
+                      <input
+                       onChange= {onChange}
+                        type="email"
+                        name="email"
+                        className="textinput textInput form-control m-3"
+                        required=""
+                        minLength="2"
+                        data-purpose="fuuemail"
+                        placeholder="Correo Electrónico"
+                        id="id_email"
+                        maxLength="64"
+                        value={formValues.email}
+                        required
+                      ></input>
+              
+              </div>
+              <div className="form-group mb-4">
+                <input
+                onChange= {onChange}
+                  type="password"
+                  name="password"
+                  className="textinput textInput form-control m-3"
+                  required=""
+                  minLength="2"
+                  data-purpose="password"
+                  placeholder="Contraseña"
+                  id="id_password"
+                  maxLength="64"
+                  value={formValues.password}
+                  required
+                ></input>
               </div>
 
-           
-
               <p className="">
-                <Link to="/Perfil">
-                  <button className="btn btn-info ml-3" type="submit">
-                    Regístrate
-                  </button>
-                </Link>
+                <button className="btn btn-info ml-3" type="submit">
+                  Regístrate
+                </button>
               </p>
 
               <div className="">

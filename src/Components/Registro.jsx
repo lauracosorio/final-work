@@ -1,11 +1,13 @@
 import React from "react";
-import Registrese from "./Registrese";
+import HeaderPP from "./HeaderPP.jsx"
+import Registrese from "./Registrese.jsx";
 import { data } from "../Utils/mocks/data";
 
 
 const Registro = () => {
   return (
     <>
+    <HeaderPP/>
       <Registrese 
       registrese = {data.Registrese}
      />

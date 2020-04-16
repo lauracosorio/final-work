@@ -1,10 +1,12 @@
 import React from "react";
 import "../Styles/Content.css";
 import { Link } from "react-router-dom";
-import HeaderPerfil from "./HeaderPerfil";
 
-function Content(props) {
+function ContentPagPrincipal(props) {
   const {
+    dataCarousel,
+    Carousel,
+    Carousel1,
     dataBox,
     dataSpan,
     dataBook
@@ -12,6 +14,69 @@ function Content(props) {
 
   return (
     <>
+    
+
+      <div
+        id="carouselCaptions"
+        className="carousel slide"
+        data-ride="carousel"
+      >
+        <ol className="carousel-indicators">
+          <li
+            data-target="#carouselCaptions"
+            data-slide-to="0"
+            className="active"
+          ></li>
+          {dataCarousel.map((item, index) => {
+            return (
+              <li
+                data-target="#carouselCaptions"
+                key={`carousel-item-${index}`}
+                data-slide-to={item.slide}
+              ></li>
+            );
+          })}
+        </ol>
+        <div className="carousel-inner">
+          {Carousel.map((item, index) => {
+            return (
+              <div className="carousel-item active" key={`img-item-${index}`}>
+                <img src={item.image} className="d-block w-100 image" alt="..." />
+                <div className=" carousel-caption d-none d-md-block">
+                  <h5 className="text-info font-weight-bold">{item.title}</h5>
+                  <p className="text-dark font-weight-bold">
+                    {item.description}
+                  </p>
+                  <Link to="/Registrese">
+                    <button type="button" className="btn btn-info col-2">
+                      {item.button}
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
+
+          {Carousel1.map((item, index) => {
+            return (
+              <div className="carousel-item" key={`img-item-${index}`}>
+                <img src={item.image} className="d-block w-100 image" alt="..." />
+                <div className=" carousel-caption d-none d-md-block">
+                  <h5 className="text-info font-weight-bold">{item.title}</h5>
+                  <p className="text-dark font-weight-bold">
+                    {item.description}
+                  </p>
+                  <Link to="/Registrese">
+                    <button type="button" className="btn btn-info col-2">
+                      {item.button}
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       <div className="container">
         <center>
@@ -110,4 +175,4 @@ function Content(props) {
   );
 }
 
-export default Content;
+export default ContentPagPrincipal;

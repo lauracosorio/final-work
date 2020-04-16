@@ -17,7 +17,7 @@ function Navbar(props) {
           Nombre pag
         </Link>
 
-        <div
+        {/* <div
           className="collapse navbar-collapse col-6 justify-content-center"
           id="navbarSupportedContent"
         >
@@ -33,7 +33,7 @@ function Navbar(props) {
               Buscar
             </button>
           </form>
-        </div>
+        </div> */}
    
         <div className=" navbar" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto col-12 ">

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { data } from "../Utils/mocks/data";
-import Content from "./Content.jsx"
-import HeaderPP from "./HeaderPP";
+
+import ContentPagPrincipal from "./ContentPagPrincipal.jsx";
+import HeaderPP from "./HeaderPP.jsx"
 
 class ContentPP extends Component {
   render() {
@@ -9,13 +10,15 @@ class ContentPP extends Component {
       <>
       
       <div id="Content">
-        <Content
+      <HeaderPP/>
+        <ContentPagPrincipal
         dataCarousel = {data.Carousel}
         Carousel = {data.Carousel1}
         Carousel1 = {data.Carousel2}
         dataBox = {data.box}
         dataSpan = {data.span}
         dataBook = {data.book} />
+       
       </div>
       </>
     );

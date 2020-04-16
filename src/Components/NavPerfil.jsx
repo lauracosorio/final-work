@@ -13,7 +13,7 @@ return (
           Navbar
         </Link>
 
-        <div
+        {/* <div
           className="collapse navbar-collapse col-8 justify-content-center"
           id="navbarSupportedContent"
         >
@@ -29,7 +29,8 @@ return (
               Buscar
             </button>
           </form>
-        </div>
+        </div> */}
+
         <div className="nav-list">
           <ul className="nav justify-content-end">
             {Perfil.map((item, index) => {
@@ -66,7 +67,7 @@ return (
                     clip-rule="evenodd"
                   />
                 </svg>
-                Mi Perfil
+                {props.name}
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
 

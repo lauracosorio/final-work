@@ -3,15 +3,14 @@ import "../Styles/Content.css";
 import { Link } from "react-router-dom";
 import "../Styles/main.css"
 
-
-function CursosPag(props) {
+function CursosPagPerfil(props) {
   const {
     Cursos
   } = props;
 
   return (
     <>
-    
+      
 
       <div className="row justify-content-center text-center conjunto col-12">
         {Cursos.map((item, index) => {
@@ -45,4 +44,4 @@ function CursosPag(props) {
   );
 }
 
-export default CursosPag;
+export default CursosPagPerfil;

@@ -1,23 +1,27 @@
 import React from 'react'
 import { data } from '../Utils/mocks/data';
+import ContentPerfil from "./ContentPerfil.jsx"
 import NavPerfil from './NavPerfil';
-import FooterPP from "./FooterPP.jsx"
-import MainPerfil from "./Cursospag.jsx"
-import Cursos from "./Cursos.jsx"
 
 
 function HeaderPerfil (){
 
     return (
         <>
-      
-        <div id="HeaderPerfil">
-        <NavPerfil 
+       <NavPerfil
         Perfil = {data.HeaderPerfil}
         dataDespliegue = {data.Despliegue}/>
-        <Cursos/>
+        <div id="HeaderPerfil">
+       
+        <ContentPerfil
+       
+        
+         dataFooter = {data.Footer}
+         dataLista = {data.Lista}
+         dataMas = {data.Mas}
+         dataImg = {data.img}
+        />
 
-        <FooterPP/>
         </div>
         </>
     )

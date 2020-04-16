@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../Styles/Sesion.css";
 
 
+
 function Sesion(props) {
 
   const {redesSociales, iniciarSesion } = props
@@ -60,7 +61,7 @@ function Sesion(props) {
               
 
               <p className="">
-                <Link to="/Perfil">
+                <Link to="/mainPerfil">
                   <button className="btn btn-info" type="submit">
                     Inicia Sesión
                   </button>

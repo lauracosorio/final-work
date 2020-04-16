@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Contraseña.css";
+import HeaderPP from "./HeaderPP.jsx"
 
 function Contraseña() {
   return (
     <>
+    <HeaderPP/>
       <section className="container">
         <div className="row d-flex justify-content-center">
           <div className="col-md-7">
