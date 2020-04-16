@@ -1,108 +1,100 @@
-import React, { Component } from "react";
+import React from "react";
 import "../Styles/ContentCurso.css";
-import mdvideo from "../Images/mdvideo.jpg"
+import mdvideo from "../Images/mdvideo.jpg";
 
-class Curso1 extends Component {
-    render() {
-        return (
-        <>
-                <div className="container">
-                    <h5 className="text-center space text-info">Marketing Digital</h5>
+function Curso1(props) {
+  return (
+    <>
+      <div class="row">
+        <aside class=" col-12 col-xs-8 col-md-5 col-lg-4 col-xl-3 bg-light">
+          <nav id="navbar-brand" class="nav sticky-top navbar-light bg-light col-12">
+            <header
+              class="navbar-brand flex-column text-center sidebar-header titulo"
+              href="#"
+            >
+              Contenido del Curso
+            </header>
 
-                    <img class="space" src="../Images/mdvideo.jpg" ></img>
+            <nav class="nav  flex-column col-12">
+              <a class="nav-link text-dark" href="#introduccion">
+                <p className="space">1. INTRODUCCIÓN - 00:10</p>
+              </a>
+              <a class="nav-link text-dark" href="#quees">
+                <p>2. EL MARKETING DIGITAL - 02:16</p>
+              </a>
+              <a class="nav-link text-dark" href="#anatomia">
+                Anatomía de un conjunto de reglas CSS
+              </a>
+              <a class="nav-link text-dark" href="#seleccionar">
+                Seleccionar múltiples elementos
+              </a>
+              <a class="nav-link text-dark" href="#fuentes">
+                Fuentes y texto
+              </a>
+              <a class="nav-link text-dark" href="#cajas">
+                Cajas, cajas, se trata de cajas
+              </a>
+              <a class="nav-link text-dark" href="#color">
+                Cambiar el color de la página
+              </a>
+              <a class="nav-link text-dark" href="#ordenar">
+                Ordenar el cuerpo
+              </a>
+              <a class="nav-link text-dark" href="#posicionar">
+                Posicionar y diseñar el título de nuestra página principal
+              </a>
+              <a class="nav-link text-dark" href="#centrando">
+                Centrando la imagen
+              </a>
+              <a class="nav-link text-dark" href="#referencias">
+                Referencias
+              </a>
+            </nav>
+          </nav>
+        </aside>
 
-                    <p className="space">El marketing digital es la aplicación de las estrategias de comercialización llevadas a cabo en los medios digitales. Todas las técnicas del mundo off-line son imitadas y traducidas a un nuevo mundo, el mundo online. En el ámbito digital aparecen nuevas herramientas como la inmediatez, las nuevas redes que surgen día a día, y la posibilidad de mediciones reales de cada una de las estrategias empleadas.  Se conocen dos instancias:</p>
+        <section class="col-12 col-xs12 col-md-7 col-lg-8 col-xl-9">
+          <h3 className="text-center justify-content-center space text-info col-8">Marketing Digital</h3>
+          <iframe
+          className="col-12"
+            width="auto"
+            height="450"
+            src="https://www.youtube.com/embed/V92Jx72x88c"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
 
-                    <p>-La primera se basa en la web 1.0, que no difiere de la utilización de medios tradicionales. Su mayor característica es la imposibilidad de comunicación y exposición de los usuarios. Solamente la empresa tiene el control de aquello que se publica sobre sí misma.</p>
+          <h5 className="space col-12">Descripción del Curso</h5>
 
-                    <p>-Con la web 2.0 nace la posibilidad de compartir información fácilmente gracias a las redes sociales y a las nuevas tecnologías de información que permiten el intercambio casi instantáneo de piezas que antes eran imposibles, como videos, gráfica, etc. Se comienza a usar internet no solo como medio para buscar información sino como comunidad, donde hay relaciones constantemente y feedback con los usuarios de diferentes partes del mundo.</p>
+          <p className="space col-12">
+            El marketing digital es la aplicación de las estrategias de
+            comercialización llevadas a cabo en los medios digitales. Todas las
+            técnicas del mundo off-line son imitadas y traducidas a un nuevo
+            mundo, el mundo online. En el ámbito digital aparecen nuevas
+            herramientas como la inmediatez, las nuevas redes que surgen día a
+            día, y la posibilidad de mediciones reales de cada una de las
+            estrategias empleadas. Se conocen dos instancias:
+          
+            -La primera se basa en la web 1.0, que no difiere de la utilización
+            de medios tradicionales. Su mayor característica es la imposibilidad
+            de comunicación y exposición de los usuarios. Solamente la empresa
+            tiene el control de aquello que se publica sobre sí misma.
+          
+            -Con la web 2.0 nace la posibilidad de compartir información
+            fácilmente gracias a las redes sociales y a las nuevas tecnologías
+            de información que permiten el intercambio casi instantáneo de
+            piezas que antes eran imposibles, como videos, gráfica, etc. Se
+            comienza a usar internet no solo como medio para buscar información
+            sino como comunidad, donde hay relaciones constantemente y feedback
+            con los usuarios de diferentes partes del mundo.
+          </p>
 
-                    
-                    <div class="card space">
-                        <div class="card-body">
-                            <h6 class="text-info card-title">Clase #1</h6>
-                            <p class="card-text"><small class="text-muted">Duracion 4:12:32</small></p>
-                        </div>
-                        <iframe width="1110" height="450" src="https://www.youtube.com/embed/V92Jx72x88c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-                        <p className="space">1. INTRODUCCIÓN  -  00:10</p>
-
-<p>2. EL MARKETING DIGITAL  -  02:16<br/>
-   - Que es el marketing digital<br/>
-   - La web 3.0<br/>
-   - Marketing 3.0<br/>
-   - Comparación del marketing tradicional y digital<br/>
-   - Ventajas del Marketing Digital<br/>
-   - Las cuatro F del marketing digital<br/>
-   - Canales</p>
-
-<p>3. PLAN DE MARKETING DIGITAL  -  46:20<br/>
-   - Etapas del plan de marketing digital<br/>
-   - Etapas<br/>
-   - Inbound marketing<br/> 
-   - Estrategias</p>
-
-<p>4. MARKETING DE CONTENIDOS  -  01:33:00<br/>
-   - Que es el marketing de contenido<br/>
-   - Beneficios <br/>
-   - El Copywriting <br/>
-   - Plataformas CMS<br/>
-   - Plataformas e-commerce</p>
-
-<p>5. SOCIAL MEDIA  -  02:13:31<br/>
-   - Que es el marketing de redes sociales<br/>
-   - Redes sociales mas populares <br/>
-   - Tiempo de uso<br/>
-   - Conexión<br/>
-   - Actividades en Internet<br/>
-   - Interacción con publicidad digital<br/>
-   - El SMO<br/>
-   - El SMM</p>
-
-   <p>6. EMAIL MARKETING  -  02:30:48<br/>
-   - Que es el email marketing<br/>
-   - Objetivos del email marketing<br/>
-   - Ventajas<br/>
-   - Procedimiento<br/>
-   - Claves del éxito<br/>
-   - Herramientas </p>
-
-   <p>7. SEO  -  02:51:57<br/>
-   - Que es SEO<br/>
-   - Finalidad del SEO<br/>
-   - Técnicas de SEO<br/>
-   - Técnicas  obsoletas</p>
-
-<p>8. SEM  -  03:15:48<br/>
-   - Que es marketing SEM<br/>
-   - Diferencia de SEO con SEM<br/>
-   - Ventajas<br/>
-   - Desventajas<br/>
-   - Estrategias SEM</p>
-
-<p>9. VIDEO MARKETING  -  03:42:25<br/>
-   - Que es video marketing <br/>
-   - Potencial<br/>
-   - Ventajas</p>
-
-<p>10. ANALÍTICA  -  03:51:47<br/>
-   - Analítica web<br/>
-   - Razones para usarla<br/>
-   - Objetivos que busca</p>
-
-<p>11. AUTOMATIZACIÓN  -  03:57:21<br/>
-   - Que es automatización<br/>
-   - Beneficios<br/>
-   - CRM</p>
-
-<p>12. INDICADORES  -  04:04:40<br/>
-   - Indicadores fundamentales<br/>
-   - Indicadores específicos</p>
-
-                    </div>
-        </>
-    )
-  }
-}  
+          
+        </section>
+      </div>
+    </>
+  );
+}
 
 export default Curso1;

@@ -425,27 +425,42 @@ export const data = {
     },
   ],
 
-  // Registrese: [
-  //   {
-  //     type: "text",
-  //     name: "fullname",
-  //     purpose: "fullname",
-  //     placeholder: "Nombre completo",
-  //     id: "id_fullname"
-  //   },
-  //   {
-  //       type: "email",
-  //       name: "email",
-  //       purpose: "fullemail",
-  //       placeholder: "Correo Electrónico",
-  //       id: "id_email"
-  //   },
-  //   {
-  //       type: "password",
-  //       name: "password",
-  //       purpose: "password",
-  //       placeholder: "Contraseña",
-  //       id: "id_password"
-  //   }
-  // ]
+//  temas1:[
+//   {
+//     name: "1. INTRODUCCIÓN "
+//   },
+//   {
+//     name: "2. EL MARKETING DIGITAL"
+//   },
+//   {
+//     name: "3. PLAN DE MARKETING DIGITAL"
+//   },
+//   {
+//     name: "4. MARKETING DE CONTENIDOS"
+//   },
+//   {
+//     name: "5. SOCIAL MEDIA "
+//   },
+//   {
+//     name: "6. EMAIL MARKETING"
+//   },
+//   {
+//     name: "7. SEO"
+//   },
+//   {
+//     name: "8. SEM"
+//   },
+//   {
+//     name: "9. VIDEO MARKETING"
+//   },
+//   {
+//     name: "10. ANALÍTICA "
+//   },
+//   {
+//     name: "11. AUTOMATIZACIÓN"
+//   },
+//   {
+//     name: "12. INDICADORES"
+//   },
+// ],
 }
