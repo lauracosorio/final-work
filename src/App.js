@@ -14,9 +14,9 @@ import Perfil from "./Pages/Perfil";
 import ContentPerfil from "./Components/ContentPerfil.jsx";
 import CursoMarketingR from "./Components/CursoMarketingR.jsx"
 import CursosPerfil from "./Components/CursosPerfil";
-import LibrosPerfil from "./Components/LibrosPerfil.jsx"
+import LibrosPerfil from "./Components/LibrosPerfil.jsx";
 import ContentP from "./Components/ContentP.jsx";
-
+import ConfiguracionP from "./Components/ConfiguracionP.jsx"
 
 function App() {
   return (
@@ -36,6 +36,7 @@ function App() {
           <Route path= "/CursosPerfil" component={CursosPerfil} />
           <Route path= "/LibrosPerfil" component = {LibrosPerfil} />
           <Route path="/Asesorias" component = {ContentP} />
+          <Route path="/Configuracion" component = {ConfiguracionP} />
         </Switch>
         <Layout />
       </BrowserRouter>

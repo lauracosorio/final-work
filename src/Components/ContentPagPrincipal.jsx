@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/Content.css";
 import { Link } from "react-router-dom";
+import logo from "../Images/inclass.png"
 
 function ContentPagPrincipal(props) {
   const {
@@ -43,7 +44,8 @@ function ContentPagPrincipal(props) {
               <div className="carousel-item active" key={`img-item-${index}`}>
                 <img src={item.image} className="d-block w-100 image" alt="..." />
                 <div className=" carousel-caption d-none d-md-block">
-                  <h5 className="text-info font-weight-bold">{item.title}</h5>
+                  <img src={logo}  width="400" alt=""/>
+     
                   <p className="text-dark font-weight-bold">
                     {item.description}
                   </p>
@@ -62,7 +64,7 @@ function ContentPagPrincipal(props) {
               <div className="carousel-item" key={`img-item-${index}`}>
                 <img src={item.image} className="d-block w-100 image" alt="..." />
                 <div className=" carousel-caption d-none d-md-block">
-                  <h5 className="text-info font-weight-bold">{item.title}</h5>
+                <img src={logo}  width="400" alt=""/>
                   <p className="text-dark font-weight-bold">
                     {item.description}
                   </p>

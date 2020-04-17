@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Header.css";
 import { Link } from "react-router-dom";
-
+import logo from "../Images/logo.png"
 
 function Navbar(props) {
   const { dataNav} = props;
@@ -14,7 +14,7 @@ function Navbar(props) {
 
       <nav className="navbarset navbar navbar-expand-lg navbar-light bg-info ">
         <Link to ="/Home" className="navbar-brand text-light col-1" href="#">
-          Nombre pag
+         <img src={logo} width="100" alt=""/>
         </Link>
 
         {/* <div

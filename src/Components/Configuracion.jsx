@@ -128,7 +128,7 @@ function Configuracion(props) {
 
         <div className=" spacetext text-center">
           <h6>¿No resolvimos tus dudas? Escribenos a este correo:</h6>
-          <h6 className="font-weight-bold text-info">
+          <h6 className="font-weight-bold text-info mb-5">
             nosotrosempresa@gmail.com
           </h6>
         </div>

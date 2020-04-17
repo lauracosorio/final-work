@@ -45,7 +45,7 @@ function CursoMarketing(props) {
 
         <section class="col-12 col-xs12 col-md-7 col-lg-8 col-xl-9">
           <h3 className="text-center justify-content-center space text-info col-8">
-            Marketing Digital
+            Marketing Relacional
           </h3>
 
           <iframe
@@ -55,6 +55,7 @@ function CursoMarketing(props) {
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            className="ml-5"
           ></iframe>
 
           <h5 className="space col-12">Descripción del Curso</h5>

@@ -10,7 +10,7 @@ function NavPerfil(props) {
 return (
 <>
       <nav className="navbar navbar-expand-lg navbar-light bg-info">
-        <Link to = "/Home" className="navbar-brand text-light" href="#">
+        <Link to = "/mainPerfil" className="navbar-brand text-light" href="#">
           <img src={logo} width="100" alt=""/>
         </Link>
 
@@ -87,7 +87,7 @@ return (
 
                
                 <div className="dropdown-divider"></div>
-                <Link className="dropdown-item"  to="/Descripcion">
+                <Link className="dropdown-item"  to="/Configuracion">
                   Configuración
                 </Link>
               </div>

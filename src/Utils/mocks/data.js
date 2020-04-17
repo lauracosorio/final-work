@@ -1,3 +1,4 @@
+import logo from "../../Images/inclass.png"
 import carrusel1 from "../../Images/carrusel1.jpg";
 import carrusel2 from "../../Images/carrusel2.jpg";
 import carrusel3 from "../../Images/carrusel3.jpg";
@@ -103,8 +104,8 @@ export const data = {
   Carousel1: [
     {
       image: carrusel1,
-      title: "Nombre pag",
-      description: "Encuentra los mejores cursos para hacer crecer tu empresa.",
+      title: logo,
+      description: "Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad",
       button: "Unirme gratis"
     }
   ],
@@ -112,15 +113,15 @@ export const data = {
   Carousel2: [
     {
       image: carrusel2,
-      title: "Nombre pag",
-      description: "Encuentra los mejores cursos para hacer crecer tu empresa.",
+      title: logo,
+      description: "Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad",
       button: "Unirme gratis",
       alt: "Second slide"
     },
     {
       image: carrusel3,
-      title: "Nombre pag",
-      description: "Encuentra los mejores cursos para hacer crecer tu empresa.",
+      title: logo,
+      description: "Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad",
       button: "Unirme gratis",
       alt: "Third slide"
     }
