@@ -12,7 +12,11 @@ import Libros from "./Components/Libros.jsx";
 import Perfil from "./Pages/Perfil";
 
 import ContentPerfil from "./Components/ContentPerfil.jsx";
-import HeaderPerfil from "./Components/HeaderPerfil.jsx";
+import CursoMarketingR from "./Components/CursoMarketingR.jsx"
+import CursosPerfil from "./Components/CursosPerfil";
+import LibrosPerfil from "./Components/LibrosPerfil.jsx"
+import ContentP from "./Components/ContentP.jsx";
+
 
 function App() {
   return (
@@ -27,7 +31,11 @@ function App() {
           <Route path="/Cursos" component={Cursos} />
           <Route path="/Libros" component={Libros} />
           <Route path="/miPerfil" component={Perfil} />
-          <Route path="/mainPerfil" component={HeaderPerfil} />
+          <Route path="/mainPerfil" component={ContentPerfil} />
+          <Route path="/CursoMarketing" component={CursoMarketingR} />
+          <Route path= "/CursosPerfil" component={CursosPerfil} />
+          <Route path= "/LibrosPerfil" component = {LibrosPerfil} />
+          <Route path="/Asesorias" component = {ContentP} />
         </Switch>
         <Layout />
       </BrowserRouter>

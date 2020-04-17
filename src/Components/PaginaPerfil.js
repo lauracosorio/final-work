@@ -1,17 +1,16 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import Footer from "./Footer.jsx"
+import Footer from "./Footer.jsx";
 import FooterPP from "./FooterPP.jsx";
 
 function PaginaPerfil(props) {
   const { Perfil, dataDespliegue, dataBox, dataSpan, dataBook } = props;
-  
 
-return (
-<>
+  return (
+    <>
       <nav className="navbar navbar-expand-lg navbar-light bg-info">
-        <Link to = "/Home" className="navbar-brand text-light" href="#">
+        <Link to="/Home" className="navbar-brand text-light" href="#">
           Navbar
         </Link>
 
@@ -32,13 +31,13 @@ return (
             </button>
           </form>
         </div> */}
-        
+
         <div className="nav-list">
           <ul className="nav justify-content-end">
             {Perfil.map((item, index) => {
               return (
                 <li className="nav-item" key={`nav-item-${index}`}>
-                  <Link to = {item.link} className="nav-link text-light ">
+                  <Link to={item.link} className="nav-link text-light ">
                     {item.name}
                   </Link>
                 </li>
@@ -72,24 +71,23 @@ return (
                 Mi Perfil
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                {dataDespliegue.map((item, index) => {
+                  return (
+                    <Link
+                      className="dropdown-item"
+                      to={item.link}
+                      key={`despliegue-${index}`}
+                    >
+                      <li className="nav-item" key={`despliegue-item-${index}`}>
+                        {item.title}
+                      </li>
+                    </Link>
+                  );
+                })}
 
-              {dataDespliegue.map((item, index) => {
-                return(
-              
-                  <Link className="dropdown-item"  to={item.link} key={`despliegue-${index}`}>
-                  <li className="nav-item" key={`despliegue-item-${index}`}>
-                  {item.title}
-                  </li>
-                </Link>
-               
-                );
-
-              })}
-
-               
                 <div className="dropdown-divider"></div>
-                <Link className="dropdown-item"  to="/Descripcion">
-                  Descripción
+                <Link className="dropdown-item" to="/Descripcion">
+                  Configuraciones
                 </Link>
               </div>
             </li>
@@ -97,19 +95,20 @@ return (
         </div>
       </nav>
 
+      
+
       <div className="container">
         <center>
           <h2 className="text-info cursos">Cursos destacados</h2>
         </center>
       </div>
       <div className="row justify-content-center text-center conjunto col-12">
-
-      {dataBox.map((item, index) => {
+        {dataBox.map((item, index) => {
           return (
             <div
               className="border-info col-xs-12 col-sm-6 col-md-3 col-lg-3 card caja"
-              key={`marketingDigital-${index}`}>
-
+              key={`marketingDigital-${index}`}
+            >
               <img
                 src={item.image}
                 className="card-img-top"
@@ -119,13 +118,15 @@ return (
               />
               <div className="card-body" width="100">
                 <h5 className="card-title text-info">{item.name}</h5>
-          <p className="card-text">{item.description}</p>
-          <p className="duracion">{item.duracion}</p>
-         <p>
-          <span role="img" arial-label="">{item.calificacion}</span> </p>
-                <Link to = "/Registrese" className="btn btn-info">
+                <p className="card-text">{item.description}</p>
+                <p className="duracion">{item.duracion}</p>
+                <p>
+                  <span role="img" arial-label="">
+                    {item.calificacion}
+                  </span>{" "}
+                </p>
+                <Link to="/Registrese" className="btn btn-info">
                   {item.boton}
-
                 </Link>
               </div>
             </div>
@@ -181,7 +182,7 @@ return (
                   {item.title}
                 </h5>
 
-                <Link to = "Registrese" className="btn btn-info col-12  boton">
+                <Link to="Registrese" className="btn btn-info col-12  boton">
                   {item.button}
                 </Link>
                 <p className="card-text description">{item.description}</p>
@@ -191,7 +192,7 @@ return (
         })}
       </div>
 
-      <FooterPP/>
+      <FooterPP />
     </>
   );
 }

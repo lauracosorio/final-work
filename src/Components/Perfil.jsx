@@ -8,7 +8,7 @@ function Perfil(props) {
     <>
       <form className="">
         <div className="row justify-content-center">
-          <div className="col-4 form-group">
+          <div className="col-4 form-group mt-5">
             <input
               placeholder="Correo Electrónico"
               type="email"
@@ -85,7 +85,7 @@ function Perfil(props) {
         </div>
 
         <div className="container col-3 justify-content-center">
-          <button type="submit" className="btn btn-info">
+          <button type="submit" className="btn btn-info mb-5">
             Enviar
           </button>
         </div>

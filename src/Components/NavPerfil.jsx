@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../Images/logo.png"
 
 import { Link } from "react-router-dom";
 
@@ -10,7 +11,7 @@ return (
 <>
       <nav className="navbar navbar-expand-lg navbar-light bg-info">
         <Link to = "/Home" className="navbar-brand text-light" href="#">
-          Navbar
+          <img src={logo} width="100" alt=""/>
         </Link>
 
         {/* <div
@@ -87,7 +88,7 @@ return (
                
                 <div className="dropdown-divider"></div>
                 <Link className="dropdown-item"  to="/Descripcion">
-                  Descripción
+                  Configuración
                 </Link>
               </div>
             </li>

@@ -12,6 +12,12 @@ function Content(props) {
 
   return (
     <>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>¡BIENVENIDO!</strong>Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
       <div className="container">
         <center>
@@ -39,7 +45,7 @@ function Content(props) {
           <p className="duracion">{item.duracion}</p>
          <p>
           <span role="img" arial-label="">{item.calificacion}</span> </p>
-                <Link to = "/Registrese" className="btn btn-info">
+                <Link to ={item.link} className="btn btn-info">
                   {item.boton}
 
                 </Link>
@@ -97,7 +103,7 @@ function Content(props) {
                   {item.title}
                 </h5>
 
-                <Link to = "Registrese" className="btn btn-info col-12  boton">
+                <Link to = "" className="btn btn-info col-12  boton">
                   {item.button}
                 </Link>
                 <p className="card-text description">{item.description}</p>

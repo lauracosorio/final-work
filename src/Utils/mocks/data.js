@@ -50,11 +50,11 @@ export const data = {
   HeaderPerfil: [
     {
       name: "Cursos",
-      link: "/Cursos"
+      link: "/CursosPerfil"
     },
     {
       name: "Libros",
-      link: "/Libros"
+      link: "/LibrosPerfil"
     }
   ],
 
@@ -129,12 +129,13 @@ export const data = {
   box: [
     {
       image: curso1,
-      name: "Curso de Marketing",
+      name: "Marketing Relacional",
       description:
-        "Direccionadas a la comunicación y comercialización electrónica de productos y servicios",
-      duracion: " 12 clases de 1 hora c/u",
+        "Incluye los fundamentos del Marketing Relacional hasta diseñar un plan de desarrollo de clientes",
+      duracion:"5 clases de 45min c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link:"CursoMarketing"
     },
     {
       image: curso2,
@@ -142,7 +143,8 @@ export const data = {
       description: "Productivividad y acertividad en nuestro día a día.",
       duracion: " 10 clases de 1 hora c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link: "CursoManejoTiempo"
     },
     {
       image: curso3,
@@ -150,7 +152,8 @@ export const data = {
       description: "Manejo adecuado del personal de tu empresa.",
       duracion: " 18 clases de 45 hora c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link: "CursoManejoPersonal"
     }
   ],
 
@@ -244,12 +247,13 @@ export const data = {
   Cursos: [
     {
       image: curso1,
-      name: "Curso de Marketing",
+      name: "Marketing Relacional",
       descripcion:
-        "Direccionadas a la comunicación y comercialización electrónica de productos y servicios",
-      duracion: " 12 clases de 1 hora c/u",
+        "Incluye los fundamentos del Marketing Relacional hasta diseñar un plan de desarrollo de clientes",
+      duracion: " 5 clases de 45min c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link: "/CursoMarketing"
     },
     {
       image: curso2,

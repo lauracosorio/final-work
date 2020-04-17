@@ -51,6 +51,7 @@ function Sesion(props) {
                         placeholder={item.placeholder}
                         id={item.id}
                         maxlength="64"
+                        required
                       ></input>
                     </>
                   );
@@ -61,11 +62,11 @@ function Sesion(props) {
               
 
               <p className="">
-                <Link to="/mainPerfil">
+        
                   <button className="btn btn-info" type="submit">
                     Inicia Sesión
                   </button>
-                </Link>
+              
               </p>
 
               <div className="text-center">

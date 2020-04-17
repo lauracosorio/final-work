@@ -2,6 +2,7 @@ import React from "react";
 import "../Styles/Content.css";
 import { Link } from "react-router-dom";
 import "../Styles/main.css"
+import HeaderPerfil from "./HeaderPerfil";
 
 function Librospag(props) {
   const {
@@ -11,6 +12,7 @@ function Librospag(props) {
   return (
     <>
       
+    
 
       <div className="row justify-content-center text-center conjunto col-12">
         {Libros.map((item, index) => {
@@ -35,7 +37,7 @@ function Librospag(props) {
           <p className="duracion">{item.duracion}</p>
          
           
-                <Link to = "/Registrese" className="btn btn-info">
+                <Link to = "" className="btn btn-info">
                   {item.button}
                 </Link>
               </div>

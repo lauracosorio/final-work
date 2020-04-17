@@ -7,7 +7,7 @@ class ContentPerfil extends Component {
   render() {
     return (
       <>
-      
+      <HeaderPerfil/>
       <div id="Content">
         <Content
         dataBox = {data.box}
