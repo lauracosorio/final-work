@@ -1,12 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,  useHistory } from "react-router-dom";
 import "../Styles/Sesion.css";
 
 
 
 function Sesion(props) {
-
+  let history = useHistory(); //cambiar la ruta cuando le da submit
   const {redesSociales, iniciarSesion } = props
+  const [estadoLogin, cambiarEstadoLogin] = React.useState({});
+
   return (
     <>
       <section className="container">
@@ -17,7 +19,26 @@ function Sesion(props) {
             </h6>
             <hr />
 
-            <form className="formulario  col-12 col-sm-7 col-md-8 col-lg-7 ">
+            <form className="formulario  col-12 col-sm-7 col-md-8 col-lg-7 " onSubmit={(event) => {
+                            fetch('/api/login', {
+                                method: 'POST',
+                                body: JSON.stringify(estadoLogin),
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                }
+                            })
+                                .then(response => response.json())
+                                .then(data => {
+                                    if(data.mensaje === "Bienvenido"){
+                                      alert("BIENVENIDO")
+                                        history.push("/mainPerfil");
+                                    }else{
+                                      alert("NO TE ENCUENTRAS REGISTRADO")
+                                        history.push("/Registrese");
+                                    }
+                                });
+                            event.preventDefault();
+                        }} method="post" target="#" >
 
             <div className="form-group">
               {redesSociales.map((item, index) => {
@@ -52,6 +73,15 @@ function Sesion(props) {
                         id={item.id}
                         maxlength="64"
                         required
+                        onChange={(event) => {
+                          cambiarEstadoLogin(Object.assign(
+                              {},
+                              estadoLogin,
+                              {
+                                  [event.target.name]: event.target.value
+                              }
+                          ))
+                      }}
                       ></input>
                     </>
                   );
@@ -62,7 +92,7 @@ function Sesion(props) {
               
 
               <p className="">
-        
+             
                   <button className="btn btn-info" type="submit">
                     Inicia Sesión
                   </button>

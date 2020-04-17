@@ -30,8 +30,10 @@ function Registrese(props) {
                                 .then(response => response.json())
                                 .then(data => {
                                     if(data.mensaje === "Bienvenido"){
-                                        history.push("/Perfil");
+                                        alert("BIENVENIDO, TU REGISTRO HA SIDO SATISFACTORIO")
+                                        history.push("/mainPerfil");
                                     }else{
+                                        alert("NO SE PUDO HACER TU REGISTRO, DATOS ERRONEOS")
                                         history.push("/Registrese");
                                     }
                                 });
