@@ -34,18 +34,22 @@ export default () => {
     });
 
     server.post("/login", (schema, request) => {
-        const estadoFormulario = JSON.parse(request.requestBody);
-        const usuario = schema.db.usuarios.findBy({email:estadoFormulario.email});
+        const estadoLogin = JSON.parse(request.requestBody);
+        const usuario = schema.db.usuarios.findBy({email:estadoLogin.email});
+   
         if(usuario){
-            Object.assign({},
-                usuario,
-                {
-                    password: undefined
-                },
-                {
-                    mensaje: "Bienvenido"
-                }
+            return (
+                Object.assign({},
+                    usuario,
+                    {
+                        password: undefined
+                    },
+                    {
+                        mensaje: "Bienvenido"
+                    }
+                )
             )
+            
         }
 
         return {

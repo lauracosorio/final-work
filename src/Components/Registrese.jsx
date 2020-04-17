@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import "../Styles/Registro.css";
 
 function Registrese(props) {
-    let history = useHistory();
+    let history = useHistory(); //cambiar la ruta cuando le da submit
     const {registrese} = props;
     const [estadoFormulario, cambiarEstadoFormulario] = React.useState({});
 
