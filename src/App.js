@@ -1,5 +1,4 @@
 import React, { Children } from "react";
-// import Sesion from"../Components/Sesion.jsx";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./Components/Layout.jsx";
 import Contraseña from "./Components/Contraseña.jsx";
@@ -8,15 +7,14 @@ import Home from "./Components/Home.jsx";
 import Iniciar from "./Components/Iniciar-sesion.jsx";
 import Cursos from "./Components/Cursos.jsx";
 import Libros from "./Components/Libros.jsx";
-
-import Perfil from "./Pages/Perfil";
-
 import ContentPerfil from "./Components/ContentPerfil.jsx";
 import CursoMarketingR from "./Components/CursoMarketingR.jsx"
 import CursosPerfil from "./Components/CursosPerfil";
 import LibrosPerfil from "./Components/LibrosPerfil.jsx";
 import ContentP from "./Components/ContentP.jsx";
 import ConfiguracionP from "./Components/ConfiguracionP.jsx"
+import misCursos from "./Components/misCursos.jsx";
+import misLibros from "./Components/misLibros.jsx";
 
 function App() {
   return (
@@ -30,13 +28,14 @@ function App() {
           <Route path="/Registrese" component={Registro} />
           <Route path="/Cursos" component={Cursos} />
           <Route path="/Libros" component={Libros} />
-          <Route path="/miPerfil" component={Perfil} />
           <Route path="/mainPerfil" component={ContentPerfil} />
           <Route path="/CursoMarketing" component={CursoMarketingR} />
           <Route path= "/CursosPerfil" component={CursosPerfil} />
-          <Route path= "/LibrosPerfil" component = {LibrosPerfil} />
-          <Route path="/Asesorias" component = {ContentP} />
-          <Route path="/Configuracion" component = {ConfiguracionP} />
+          <Route path= "/LibrosPerfil" component={LibrosPerfil} />
+          <Route path="/Asesorias" component={ContentP} />
+          <Route path="/Configuracion" component={ConfiguracionP} />
+          <Route path="/misCursos" component={misCursos} />
+          <Route path="/misLibros" component={misLibros} />
         </Switch>
         <Layout />
       </BrowserRouter>

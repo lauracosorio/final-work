@@ -12,17 +12,17 @@ function Content(props) {
 
   return (
     <>
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>¡BIENVENIDO!</strong>Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <div className="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>¡ BIENVENIDO ! </strong>Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad
+  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
 
       <div className="container">
-        <center>
-          <h2 className="text-info cursos">Cursos destacados</h2>
-        </center>
+      
+          <h2 className="text-info cursos text-center">Cursos destacados</h2>
+
       </div>
       <div className="row justify-content-center text-center conjunto col-12">
 
@@ -78,9 +78,9 @@ function Content(props) {
       </div>
 
       <div className="container">
-        <center>
-          <h2 className="text-info libros">Libros Recomendados</h2>
-        </center>
+   
+          <h2 className="text-info libros text-center">Libros Recomendados</h2>
+      
       </div>
 
       <div className="row justify-content-center text-center conjunto col-12">
@@ -103,7 +103,7 @@ function Content(props) {
                   {item.title}
                 </h5>
 
-                <Link to = "" className="btn btn-info col-12  boton">
+                <Link to = "misLibros" className="btn btn-info col-12  boton">
                   {item.button}
                 </Link>
                 <p className="card-text description">{item.description}</p>

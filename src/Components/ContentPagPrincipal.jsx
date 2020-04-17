@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Content.css";
 import { Link } from "react-router-dom";
-import logo from "../Images/inclass.png"
+import logo from "../Images/inclass.png";
 
 function ContentPagPrincipal(props) {
   const {
@@ -15,8 +15,6 @@ function ContentPagPrincipal(props) {
 
   return (
     <>
-    
-
       <div
         id="carouselCaptions"
         className="carousel slide"
@@ -42,10 +40,14 @@ function ContentPagPrincipal(props) {
           {Carousel.map((item, index) => {
             return (
               <div className="carousel-item active" key={`img-item-${index}`}>
-                <img src={item.image} className="d-block w-100 image" alt="..." />
+                <img
+                  src={item.image}
+                  className="d-block w-100 image"
+                  alt="..."
+                />
                 <div className=" carousel-caption d-none d-md-block">
-                  <img src={logo}  width="400" alt=""/>
-     
+                  <img src={logo} width="400" alt="" />
+
                   <p className="text-dark font-weight-bold">
                     {item.description}
                   </p>
@@ -62,9 +64,13 @@ function ContentPagPrincipal(props) {
           {Carousel1.map((item, index) => {
             return (
               <div className="carousel-item" key={`img-item-${index}`}>
-                <img src={item.image} className="d-block w-100 image" alt="..." />
+                <img
+                  src={item.image}
+                  className="d-block w-100 image"
+                  alt="..."
+                />
                 <div className=" carousel-caption d-none d-md-block">
-                <img src={logo}  width="400" alt=""/>
+                  <img src={logo} width="400" alt="" />
                   <p className="text-dark font-weight-bold">
                     {item.description}
                   </p>
@@ -81,18 +87,15 @@ function ContentPagPrincipal(props) {
       </div>
 
       <div className="container">
-        <center>
-          <h2 className="text-info cursos">Cursos destacados</h2>
-        </center>
+        <h2 className="text-info cursos text-center">Cursos destacados</h2>
       </div>
       <div className="row justify-content-center text-center conjunto col-12">
-
-      {dataBox.map((item, index) => {
+        {dataBox.map((item, index) => {
           return (
             <div
               className="border-info col-xs-12 col-sm-6 col-md-3 col-lg-3 card caja"
-              key={`marketingDigital-${index}`}>
-
+              key={`marketingDigital-${index}`}
+            >
               <img
                 src={item.image}
                 className="card-img-top"
@@ -102,13 +105,15 @@ function ContentPagPrincipal(props) {
               />
               <div className="card-body" width="100">
                 <h5 className="card-title text-info">{item.name}</h5>
-          <p className="card-text">{item.description}</p>
-          <p className="duracion">{item.duracion}</p>
-         <p>
-          <span role="img" arial-label="">{item.calificacion}</span> </p>
-                <Link to = "/Registrese" className="btn btn-info">
+                <p className="card-text">{item.description}</p>
+                <p className="duracion">{item.duracion}</p>
+                <p>
+                  <span role="img" arial-label="">
+                    {item.calificacion}
+                  </span>{" "}
+                </p>
+                <Link to="/Registrese" className="btn btn-info">
                   {item.boton}
-
                 </Link>
               </div>
             </div>
@@ -139,9 +144,9 @@ function ContentPagPrincipal(props) {
       </div>
 
       <div className="container">
-        <center>
-          <h2 className="text-info libros">Libros Recomendados</h2>
-        </center>
+      
+          <h2 className="text-info libros text-center">Libros Recomendados</h2>
+     
       </div>
 
       <div className="row justify-content-center text-center conjunto col-12">
@@ -164,7 +169,7 @@ function ContentPagPrincipal(props) {
                   {item.title}
                 </h5>
 
-                <Link to = "Registrese" className="btn btn-info col-12  boton">
+                <Link to="Registrese" className="btn btn-info col-12  boton">
                   {item.button}
                 </Link>
                 <p className="card-text description">{item.description}</p>

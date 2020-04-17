@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { data } from "../Utils/mocks/data";
 import HeaderPerfil from "./HeaderPerfil.jsx"
-import Librospag from "./LibrosPaPerfil.jsx";
+import LibrospagPerfil from "./LibrosPaPerfil.jsx";
 
 class Libros extends Component {
   render() {
@@ -11,7 +11,7 @@ class Libros extends Component {
         <div className="container">
           <h2 className="text-info text-center cursos">Libros Recomendados</h2>
         </div>
-        <Librospag Libros={data.Libros} />
+        <LibrospagPerfil Libros={data.Libros} />
       </div>
     );
   }

@@ -37,7 +37,7 @@ function Librospag(props) {
           <p className="duracion">{item.duracion}</p>
          
           
-                <Link to = "" className="btn btn-info">
+                <Link to = "misLibros" className="btn btn-info">
                   {item.button}
                 </Link>
               </div>

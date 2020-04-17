@@ -2,11 +2,34 @@ import React from "react";
 import "../Styles/Content.css";
 
 function Perfil(props) {
-  const { perfil, horario, opciones} = props;
-  console.log(perfil, horario, opciones);
+  const { perfil, horario, opciones } = props;
+  // console.log(perfil, horario, opciones);
+  const [estadoAsesorias, cambiarEstadoAsesorias] = React.useState({});
+
   return (
     <>
-      <form className="">
+      <form
+        className=""
+        onSubmit={(event) => {
+          fetch("/api/asesorias", {
+            method: "POST",
+            body: JSON.stringify(estadoAsesorias),
+            headers: {
+              "Content-Type": "application/json"
+            }
+          })
+            .then(response => response.json())
+            .then(data => {
+              if (data.mensaje === "Asesoria"){
+               
+              } 
+              else {
+                alert("Tú asesoría fue solicitada con éxito, pronto nos estaremos poniendo en contacto contigo.")
+              }
+            });
+          event.preventDefault();
+        }}
+      >
         <div className="row justify-content-center">
           <div className="col-4 form-group mt-5">
             <input
@@ -14,11 +37,18 @@ function Perfil(props) {
               type="email"
               className="form-control"
               id="exampleInputPassword1"
+              required
+              onChange={event => {
+                cambiarEstadoAsesorias(
+                  Object.assign({}, estadoAsesorias, {
+                    [event.target.name]: event.target.value
+                  })
+                );
+              }}
             />
           </div>
 
           <div className="container text-center dias">
-          
             <h5 className="text-info">Seleciona tu facilidad diaria </h5>
             <div className="form-check form-check-inline justify-content-center">
               {perfil.map((item, index) => {
@@ -55,7 +85,7 @@ function Perfil(props) {
                       key={`horario-${index}`}
                       className="form-check-input m-1 mb-3"
                       type="radio"
-                      name="inlineRadioOptions"
+                      // name="inlineRadioOptions"
                       id={item.id}
                       value={item.value}
                     />
@@ -78,7 +108,11 @@ function Perfil(props) {
             </h5>
             <select className="custom-select col-4" id="inlineFormCustomSelect">
               {opciones.map((item, index) => {
-                return <option  key={`opciones-${index}`} value={item.value}>{item.name}</option>;
+                return (
+                  <option required key={`opciones-${index}`} value={item.value}>
+                    {item.name}
+                  </option>
+                );
               })}
             </select>
           </div>
