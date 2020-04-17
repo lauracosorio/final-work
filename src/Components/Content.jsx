@@ -15,7 +15,7 @@ function Content(props) {
     <div className="alert alert-success alert-dismissible fade show" role="alert">
   <strong>¡ BIENVENIDO ! </strong>Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad
   <button type="button" className="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
+    <span aria-hidden="true"> &nbsp; &nbsp;  &times;</span>
   </button>
 </div>
 

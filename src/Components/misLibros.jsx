@@ -8,8 +8,7 @@ class misLibros extends Component {
       <>
         <HeaderPerfil />
         <div id="Content">
-          <div className="container">
-            <div
+        <div
               className="alert alert-success alert-dismissible fade show"
               role="alert"
             >
@@ -24,11 +23,13 @@ class misLibros extends Component {
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+          <div className="container">
+            
 
             <h2 className="text-info cursos text-center"> MIS LIBROS FAVORITOS</h2>
             <div className="Contenido">
 
-                
+
             </div>
           </div>
           <div className=" text-center">
