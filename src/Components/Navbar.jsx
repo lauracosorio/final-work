@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Header.css";
+// import "../Styles/Header.css";
 import { Link } from "react-router-dom";
 import logo from "../Images/logo.png"
 
@@ -36,7 +36,7 @@ function Navbar(props) {
         </div> */}
    
         <div className=" navbar" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto col-12 ">
+          <ul className="navbar-nav mr-auto col-12">
             {dataNav.map((item, index) => {
               return (
                 <Link to= {item.link} className="nav-link text-light titulo">

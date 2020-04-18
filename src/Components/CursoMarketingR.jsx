@@ -52,7 +52,7 @@ function CursoMarketing(props) {
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-            className="ml-5"
+           
           ></iframe>
 
           <h5 className="space col-12">Descripción del Curso</h5>

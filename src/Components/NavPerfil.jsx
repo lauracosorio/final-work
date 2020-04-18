@@ -1,17 +1,20 @@
 import React from "react";
-import logo from "../Images/logo.png"
-
+import logo from "../Images/logo.png";
+import "../Styles/Header.css"
 import { Link } from "react-router-dom";
 
 function NavPerfil(props) {
   const { Perfil, dataDespliegue } = props;
-  
 
-return (
-<>
-      <nav className="navbar navbar-expand-lg navbar-light bg-info">
-        <Link to = "/mainPerfil" className="navbar-brand text-light" href="#">
-          <img src={logo} width="100" alt=""/>
+  return (
+    <>
+      <nav className=" navbar navbar-expand-lg navbar-light bg-info">
+        <Link
+          to="/mainPerfil"
+          className="navbar-brand text-light"
+          href="#"
+        >
+          <img src={logo} width="100" alt="" />
         </Link>
 
         {/* <div
@@ -32,15 +35,15 @@ return (
           </form>
         </div> */}
 
-        <div className="nav-list col-8">
-          <ul className="nav ml-n4 col-8">
+        <div className="nav-list col-10">
+          <ul className="nav col-8">
             {Perfil.map((item, index) => {
               return (
-                <li className="nav-item " key={`nav-item-${index}`}>
-                  <Link to = {item.link} className="nav-link text-light ">
+                <Link to={item.link} className="nav-link text-light ">
+                  <li className="nav-item perfil" key={`nav-item-${index}`}>
                     {item.name}
-                  </Link>
-                </li>
+                  </li>
+                </Link>
               );
             })}
             <li className="nav-item dropdown ">
@@ -63,7 +66,7 @@ return (
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                   fillRule="evenodd"
+                    fillRule="evenodd"
                     d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z"
                     clipRule="evenodd"
                   />
@@ -71,23 +74,22 @@ return (
                 {props.name}
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                {dataDespliegue.map((item, index) => {
+                  return (
+                    <Link
+                      className="dropdown-item"
+                      to={item.link}
+                      key={`despliegue-${index}`}
+                    >
+                      <li className="nav-item" key={`despliegue-item-${index}`}>
+                        {item.title}
+                      </li>
+                    </Link>
+                  );
+                })}
 
-              {dataDespliegue.map((item, index) => {
-                return(
-              
-                  <Link className="dropdown-item"  to={item.link} key={`despliegue-${index}`}>
-                  <li className="nav-item" key={`despliegue-item-${index}`}>
-                  {item.title}
-                  </li>
-                </Link>
-               
-                );
-
-              })}
-
-               
                 <div className="dropdown-divider"></div>
-                <Link className="dropdown-item"  to="/Configuracion">
+                <Link className="dropdown-item" to="/Configuracion">
                   Configuración
                 </Link>
               </div>
