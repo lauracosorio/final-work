@@ -136,7 +136,7 @@ export const data = {
       duracion:"5 clases de 45min c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
       boton: "Iniciar Curso",
-      link:"CursoMarketing"
+      link:"/CursoMarketing"
     },
     {
       image: curso2,
@@ -145,16 +145,16 @@ export const data = {
       duracion: " 10 clases de 1 hora c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
       boton: "Iniciar Curso",
-      link: "CursoManejoTiempo"
+      link: "/ManejoTiempo"
     },
     {
       image: curso3,
       name: "Curso de Manejo del Personal",
       description: "Manejo adecuado del personal de tu empresa.",
-      duracion: " 18 clases de 45 hora c/u",
+      duracion: " 12 clases de 45 hora c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
       boton: "Iniciar Curso",
-      link: "CursoManejoPersonal"
+      link: "/ManejoPersonal"
     }
   ],
 
@@ -262,15 +262,17 @@ export const data = {
       descripcion: "Productivividad y acertividad en nuestro día a día.",
       duracion: " 10 clases de 1 hora c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link: "/ManejoTiempo"
     },
     {
       image: curso3,
       name: "Curso de Manejo del Personal",
       descripcion: "Manejo adecuado del personal de tu empresa.",
-      duracion: " 18 clases de 45 hora c/u",
+      duracion: " 12 clases de 45 hora c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link: "ManejoPersonal"
     },
     {
       image: mt1,
@@ -279,7 +281,8 @@ export const data = {
         "Hacer más tareas en menos tiempo, reducir el estrés y ser más productivo en el trabajo",
       duracion: " 5 clases de 1 hora c/u",
       calificacion: " ⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link:"Productividad"
     },
     {
       image: mt2,
@@ -287,7 +290,8 @@ export const data = {
       descripcion: "Desempeño laboral",
       duracion: "4 horas",
       calificacion: "⭐⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link:"OrganizacionPersonal"
     },
     {
       image: mt3,
@@ -296,7 +300,8 @@ export const data = {
         "Maneja tu estrés con técnicas prácticas y fáciles de gestión del tiempo, mindfulness, asertividad",
       duracion: "9 clases de 33min c/u",
       calificacion: "⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link:"ControlEstres"
     },
     {
       image: mt4,
@@ -304,7 +309,8 @@ export const data = {
       descripcion: "Tips para lograr un manejo de finanzas adecuado.",
       duracion: "7 clases de 45min c/u",
       calificacion: "⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link: "ManejoFinanzas"
     },
     {
       image: mt5,
@@ -312,33 +318,37 @@ export const data = {
       descripcion: "Aprender a manejar una empresa desde 0.",
       duracion: "18 clases de 1 hora C/u",
       calificacion: "⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link: "AdministracionEmpresas"
     },
     {
       image: mt6,
       name: "Herramientas Para El Éxito De Empresas",
       descripcion: "Bases organizacionales de una empresa.",
-      duracion: " 20 clases de 1 hora c/u",
+      duracion: " 13 clases de 1 hora c/u",
       calificacion: "⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link:"ExitoEmpresas"
     },
     {
       image: mt7,
-      name: "Marketing Digital ",
+      name: "Marketing Digital",
       descripcion:
         "Aprende las mejores estrategias de Marketing Digital desde cero. ",
       duracion: "7 clases de 40min c/u",
       calificacion: "⭐⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link: "MarketingDigital"
     },
     {
       image: mt8,
       name: "Diseña Tu Modelo De Negocio",
       descripcion:
         "Diseña o mejora tu modelo de negocio en base a la metodología de design thinking",
-      duracion: "20 clases de 25 min c/u",
+      duracion: "12 clases de 25 min c/u",
       calificacion: "⭐⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link: "ModeloNegocio"
     },
     {
       image: mt9,
@@ -346,7 +356,8 @@ export const data = {
       descripcion: "Indicadores empresariales y toma de decisiones",
       duracion: "8 clases de 45 min c/u",
       calificacion: "⭐⭐⭐⭐⭐",
-      boton: "Iniciar Curso"
+      boton: "Iniciar Curso",
+      link: "GestionEmpresarial"
     }
   ],
 

@@ -32,18 +32,18 @@ return (
           </form>
         </div> */}
 
-        <div className="nav-list">
-          <ul className="nav justify-content-end">
+        <div className="nav-list col-8">
+          <ul className="nav ml-n4 col-8">
             {Perfil.map((item, index) => {
               return (
-                <li className="nav-item" key={`nav-item-${index}`}>
+                <li className="nav-item " key={`nav-item-${index}`}>
                   <Link to = {item.link} className="nav-link text-light ">
                     {item.name}
                   </Link>
                 </li>
               );
             })}
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown ">
               <a
                 className="nav-link dropdown-toggle text-light "
                 href="#"

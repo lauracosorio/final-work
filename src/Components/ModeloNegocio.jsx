@@ -3,7 +3,7 @@ import "../Styles/ContentCurso.css";
 import { Link } from "react-router-dom";
 import HeaderPerfil from "./HeaderPerfil";
 
-function CursoMarketing(props) {
+function ModeloNegocio(props) {
   return (
     <>
       <HeaderPerfil />
@@ -22,19 +22,37 @@ function CursoMarketing(props) {
 
             <nav class="nav  flex-column col-12">
               <a class="nav-link text-dark" href="#introduccion">
-                1. INTRODUCCIÓN GESTIÓN DE LA RELACIÓN CON CLIENTES - 45:00 min
+                1. INTRODUCCIÓN - 25:00 min
               </a>
               <a class="nav-link text-dark" href="#">
-                2. ABC DEL MARKETING RELACIONAL - 45:00 min
+                2. PLANIFICACIÓN ESTRATÉGICA - 25:00 min
               </a>
               <a class="nav-link text-dark" href="#">
-                3. ESTRATEGIAS DE CLIENTES EN MARKETIN RELACIONAL - 45:00 min
+                3. OPCIONES ESTRATÉGICAS - 25:00 min
               </a>
               <a class="nav-link text-dark" href="#">
-                4. COMO DISEÑAR UN PLAN DE DESARROLLO DE CLIENTES - 45:00 min
+                4. MODELO DE NEGOCIO - 25:00 min
               </a>
               <a class="nav-link text-dark" href="#">
-                5. ESCENARIOS DE LA POLÍTICA DE FIDELIZACIÓN -45:00 min
+                5. CLIENTES - 25:00 min
+              </a>
+              <a class="nav-link text-dark" href="#">
+                6. VALOR - 25:00 min
+              </a>
+              <a class="nav-link text-dark" href="#">
+                7. VALOR Y CLIENTES - 25:00 min
+              </a>
+              <a class="nav-link text-dark" href="#">
+                8. DIRECTORIOS
+              </a>
+              <a class="nav-link text-dark" href="#">
+                9. FINANZAS Y COSTOS - 25:00 min
+              </a>
+              <a class="nav-link text-dark" href="#">
+                10. FINANZAS Y PRECIOS - 25:00 min
+              </a>
+              <a class="nav-link text-dark" href="#">
+                11. FINANZAS - 25:00 min
               </a>
             </nav>
           </nav>
@@ -42,37 +60,24 @@ function CursoMarketing(props) {
 
         <section class="col-12 col-xs12 col-md-7 col-lg-8 col-xl-9 text-center">
           <h3 className="mt-3 mb-5 title text-info col-8">
-            Marketing Relacional
+            Diseña tu modelo de negocio
           </h3>
 
           <iframe
             width="auto"
             height="315"
-            src="https://www.youtube.com/embed/OmQBc5NjSYM"
+            src="https://www.youtube.com/embed/kEg8nh9_AvI"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-            className="ml-5"
           ></iframe>
-
           <h5 className="space col-12">Descripción del Curso</h5>
 
           <p className="space col-12">
-            El Marketing Relacional es una rama del Marketing cuyo enfoque va de
-            contar con el cliente como eje central para el crecimiento de la
-            empresa. Puede parecer obvio, pero algunas veces nos olvidamos de
-            conceptos de “fidelizar” y anteponemos los conceptos de “captar” o
-            de “vender”. Esta rama del Marketing implica una alta carga
-            analítica sobre la cartera de clientes con fin de priorizar los
-            recursos de la empresa en determinados grupos (segmentos) de
-            clientes en función del valor de cada segmento de cliente. En este
-            curso, te enseñaré los fundamentos del Marketing Relacional hasta
-            hacer un plan básico de desarrollo de clientes. El principal
-            objetivo del curso es dar una visión muy práctica de cómo aplicar
-            técnicas analíticas de segmentación de clientes (RFM, Ciclo de Vida,
-            etc.), generación de métricas básicas y definición de acciones sobre
-            una cartera de clientes con el fin de fidelizar, activar y
-            desarrollar los diferentes segmentos de clientes.
+            Partirás de vídeos grabados para asentar bien los conceptos y
+            entender el trabajo que debes realizar, así como también material,
+            hojas de calculo, y lecturas extras propuestas. Toda la teoría la
+            validarás y la pondrás en práctica, con apoyo del instructor.
           </p>
           <Link to="/CursosPerfil">
             <button className="btn btn-info col-3">Volver</button>
@@ -83,4 +88,4 @@ function CursoMarketing(props) {
   );
 }
 
-export default CursoMarketing;
+export default ModeloNegocio;

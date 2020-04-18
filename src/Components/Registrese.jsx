@@ -47,7 +47,7 @@ function Registrese(props) {
                                                 type={item.type}
                                                 name={item.name}
                                                 className="textinput textInput form-control m-3"
-                                                required=""
+                                                required
                                                 minLength="2"
                                                 data-purpose={item.purpose}
                                                 placeholder={item.placeholder}
