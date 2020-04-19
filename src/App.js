@@ -26,6 +26,7 @@ import ContentP from "./Components/ContentP.jsx";
 import ConfiguracionP from "./Components/ConfiguracionP.jsx";
 import misCursos from "./Components/misCursos.jsx";
 import misLibros from "./Components/misLibros.jsx";
+import Comprar from "./Components/Comprar.jsx";
 
 
 
@@ -61,6 +62,7 @@ function App() {
           <Route path="/MarketingDigital" component={MarketingDigital} />
           <Route path="/ModeloNegocio" component={ModeloNegocio} />
           <Route path="/GestionEmpresarial" component={GestionEmpresarial} />
+          <Route path="/ComprarCurso" component={Comprar} />
         </Switch>
         <Layout />
       </BrowserRouter>

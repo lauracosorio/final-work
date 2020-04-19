@@ -101,32 +101,7 @@ function Perfil(props) {
             </div>
           </div>
 
-          <div className="container text-center">
-            <h5 className="text-info">¿Cómo prefieres que se te dicte la asesoria ? </h5>
-            <div className="form-check form-check-inline">
-              {modalidad.map((item, index) => {
-                return (
-                  <>
-                    <input
-                      key={`horario-${index}`}
-                      className="form-check-input m-1 mb-3"
-                      type="radio"
-                      // name="inlineRadioOptions"
-                      id={item.id}
-                      value={item.value}
-                    />
-                    <label
-                      className="form-check-label m-1 mb-3"
-                      htmlFor={item.for}
-                    >
-                      {" "}
-                      {item.name}
-                    </label>
-                  </>
-                );
-              })}
-            </div>
-          </div>
+      
 
           <div className="container text-center">
             <h5 className="text-info text-center">

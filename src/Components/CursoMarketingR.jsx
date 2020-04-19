@@ -7,40 +7,40 @@ function CursoMarketing(props) {
   return (
     <>
       <HeaderPerfil />
-      <div class="row">
-        <aside class=" col-12 col-xs-8 col-md-5 col-lg-4 col-xl-3 bg-light">
+      <div className="row">
+        <aside className=" col-12 col-xs-8 col-md-5 col-lg-4 col-xl-3 bg-light">
           <nav
             id="navbar-brand"
-            class="nav sticky-top navbar-light bg-light col-12"
+            className="nav sticky-top navbar-light bg-light col-12"
           >
             <header
-              class="navbar-brand flex-column text-center sidebar-header titulo"
+              className="navbar-brand flex-column text-center sidebar-header titulo"
               href="#"
             >
               Contenido del Curso
             </header>
 
-            <nav class="nav  flex-column col-12">
-              <a class="nav-link text-dark" href="#introduccion">
+            <nav className="nav  flex-column col-12">
+              <a className="nav-link text-dark" href="#introduccion">
                 1. INTRODUCCIÓN GESTIÓN DE LA RELACIÓN CON CLIENTES - 45:00 min
               </a>
-              <a class="nav-link text-dark" href="#">
+              <a className="nav-link text-dark" href="#">
                 2. ABC DEL MARKETING RELACIONAL - 45:00 min
               </a>
-              <a class="nav-link text-dark" href="#">
+              <a className="nav-link text-dark" href="#">
                 3. ESTRATEGIAS DE CLIENTES EN MARKETIN RELACIONAL - 45:00 min
               </a>
-              <a class="nav-link text-dark" href="#">
+              <a className="nav-link text-dark" href="#">
                 4. COMO DISEÑAR UN PLAN DE DESARROLLO DE CLIENTES - 45:00 min
               </a>
-              <a class="nav-link text-dark" href="#">
+              <a className="nav-link text-dark" href="#">
                 5. ESCENARIOS DE LA POLÍTICA DE FIDELIZACIÓN -45:00 min
               </a>
             </nav>
           </nav>
         </aside>
 
-        <section class="col-12 col-xs12 col-md-7 col-lg-8 col-xl-9 text-center">
+        <section className="col-12 col-xs12 col-md-7 col-lg-8 col-xl-9 text-center">
           <h3 className="mt-3 mb-5 title text-info col-8">
             Marketing Relacional
           </h3>
@@ -49,9 +49,9 @@ function CursoMarketing(props) {
             width="auto"
             height="315"
             src="https://www.youtube.com/embed/OmQBc5NjSYM"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
            
           ></iframe>
 
@@ -74,8 +74,16 @@ function CursoMarketing(props) {
             una cartera de clientes con el fin de fidelizar, activar y
             desarrollar los diferentes segmentos de clientes.
           </p>
+          <div>
+          <h4 className="col-12">Precio: $130.000</h4>
+          <Link to="/ComprarCurso">
+          <button className="btn btn-info col-3"> Comprar Curso </button>
+          </Link>
+            
+          
+          </div>
           <Link to="/CursosPerfil">
-            <button className="btn btn-info col-3">Volver</button>
+            <button className="btn btn-info col-2 mt-5">Volver</button>
           </Link>
         </section>
       </div>

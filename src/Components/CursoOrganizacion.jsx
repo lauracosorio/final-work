@@ -7,40 +7,40 @@ function CursoOrganizacion(props) {
   return (
     <>
       <HeaderPerfil />
-      <div class="row">
-        <aside class=" col-12 col-xs-8 col-md-5 col-lg-4 col-xl-3 bg-light">
+      <div className="row">
+        <aside className=" col-12 col-xs-8 col-md-5 col-lg-4 col-xl-3 bg-light">
           <nav
             id="navbar-brand"
-            class="nav sticky-top navbar-light bg-light col-12"
+            className="nav sticky-top navbar-light bg-light col-12"
           >
             <header
-              class="navbar-brand flex-column text-center sidebar-header titulo"
+              className="navbar-brand flex-column text-center sidebar-header titulo"
               href="#"
             >
               Contenido del Curso
             </header>
 
-            <nav class="nav  flex-column col-12">
-              <a class="nav-link text-dark" href="#introduccion">
+            <nav className="nav  flex-column col-12">
+              <a className="nav-link text-dark" href="#introduccion">
                 1. INTRODUCCIÓN - 1HORA
               </a>
-              <a class="nav-link text-dark" href="#">
+              <a className="nav-link text-dark" href="#">
                 2. APROVECHAMIENTO DEL TIEMPO - 45:00 min
               </a>
-              <a class="nav-link text-dark" href="#">
+              <a className="nav-link text-dark" href="#">
                 3. ELABORACIÓN DE METAS - 1HORA
               </a>
-              <a class="nav-link text-dark" href="#">
+              <a className="nav-link text-dark" href="#">
                 4. PLANIFICACIÓN - 1HORA
               </a>
-              <a class="nav-link text-dark" href="#">
+              <a className="nav-link text-dark" href="#">
                 5. LA PROGRAMACIÓN - 1HORA
               </a>
             </nav>
           </nav>
         </aside>
 
-        <section class="col-12 col-xs12 col-md-7 col-lg-8 col-xl-9 text-center">
+        <section className="col-12 col-xs12 col-md-7 col-lg-8 col-xl-9 text-center">
           <h3 className="mt-3 mb-5 title text-info col-8">
             Organización Personal y Manejo Del Tiempo
           </h3>
@@ -49,9 +49,9 @@ function CursoOrganizacion(props) {
             width="auto"
             height="315"
             src="https://www.youtube.com/embed/MvYXnluAdYY"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
 
           <h5 className="space col-12">Descripción del Curso</h5>
@@ -67,8 +67,16 @@ function CursoOrganizacion(props) {
             “ladrones de tiempo” y los imprevistos, así como diversos consejos
             útiles para programar tu tiempo de manera realista.
           </p>
+          <div>
+          <h4 className="col-12">Precio: $130.000</h4>
+          <Link to="/ComprarCurso">
+          <button className="btn btn-info col-3"> Comprar Curso </button>
+          </Link>
+            
+          
+          </div>
           <Link to="/CursosPerfil">
-            <button className="btn btn-info col-3">Volver</button>
+            <button className="btn btn-info col-2 mt-5">Volver</button>
           </Link>
         </section>
       </div>

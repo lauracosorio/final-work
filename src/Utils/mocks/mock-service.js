@@ -16,11 +16,20 @@ export default () => {
         password: "123456",
         email: "laurisosorio7@hotmail.com"
       },
-    //   {
-    //     fullname: "Maria Restrepo",
-    //     password: "123456",
-    //     email: "mclarea021@gmail.com"
-    //   }
+      {
+        fullname: "Maria Restrepo",
+        password: "123456",
+        email: "mclarea021@gmail.com"
+      }
+    ],
+
+    pagos: [
+      {
+        fullname: "Laura Osorio",
+        email: "laurisosorio7@hotmail.com",
+        date: "23-2020",
+        code: "0000"
+      }
     ],
 
   });
@@ -91,5 +100,25 @@ export default () => {
     }
     return ( alert("Tú asesoría fue solicitada con éxito, pronto nos estaremos comunicando contigo."));
   });
+
+  server.post("/pago", (schema, request) => {
+    const estadoPago = JSON.parse(request.requestBody);
+    const pago = schema.db.pagos.findBy({ email: estadoPago.email });
+
+    if (pago) {
+      return Object.assign(
+        {},
+        pago,
+        {
+          code: undefined
+        },
+          {
+            mensaje: "Pago"
+          }
+      );
+    }
+    return ( alert("Tú pago fue solicitada con éxito."));
+  });
+
 };
 

@@ -562,6 +562,58 @@ export const data = {
       name: "Noche"
     }
   ],
+  Comprar: [
+    {
+      id: "Radio1",
+      for: "Radio1",
+      value: "option1",
+      name: "Comprar curso - $130.000"
+    },
+    {
+      id: "Radio2",
+      for: "Radio2",
+      value: "option2",
+      name: "Comprar suscripción semestral - $350.000"
+    },
+    {
+      id: "Radio3",
+      for: "Radio3",
+      value: "option3",
+      name: "Comprar suscripción mensual - $600.000"
+    }
+  ],
+
+  Pago: [
+    {
+      type: "text",
+      name: "fullname",
+      purpose: "fullname",
+      placeholder: "Nombre completo",
+      id: "id_fullname"
+    },
+    {
+      type: "email",
+      name: "email",
+      purpose: "fullemail",
+      placeholder: "Correo Electrónico",
+      id: "id_email"
+    },
+    {
+      type: "text",
+      name: "date",
+      purpose: "date",
+      placeholder: "Fecha de Vencimiento",
+      id: "id_date"
+    },
+    {
+      type: "number",
+      name: "code",
+      purpose: "code",
+      placeholder: "Código de Seguridad",
+      id: "id_code"
+    }
+  ],
+
   modalidad: [
     {
       id: "inlineRadio1",
