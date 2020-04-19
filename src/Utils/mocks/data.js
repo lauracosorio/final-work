@@ -1,4 +1,4 @@
-import logo from "../../Images/inclass.png"
+import logo from "../../Images/inclass.png";
 import carrusel1 from "../../Images/carrusel1.jpg";
 import carrusel2 from "../../Images/carrusel2.jpg";
 import carrusel3 from "../../Images/carrusel3.jpg";
@@ -105,7 +105,8 @@ export const data = {
     {
       image: carrusel1,
       title: logo,
-      description: "Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad",
+      description:
+        "Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad",
       button: "Unirme gratis"
     }
   ],
@@ -114,14 +115,16 @@ export const data = {
     {
       image: carrusel2,
       title: logo,
-      description: "Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad",
+      description:
+        "Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad",
       button: "Unirme gratis",
       alt: "Second slide"
     },
     {
       image: carrusel3,
       title: logo,
-      description: "Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad",
+      description:
+        "Acercate a nuestro mundo digital y transformate en conocimieno, experiencia y realidad",
       button: "Unirme gratis",
       alt: "Third slide"
     }
@@ -133,10 +136,10 @@ export const data = {
       name: "Marketing Relacional",
       description:
         "Incluye los fundamentos del Marketing Relacional hasta diseñar un plan de desarrollo de clientes",
-      duracion:"5 clases de 45min c/u",
+      duracion: "5 clases de 45min c/u",
       calificacion: " ⭐⭐⭐⭐⭐",
       boton: "Iniciar Curso",
-      link:"/CursoMarketing"
+      link: "/CursoMarketing"
     },
     {
       image: curso2,
@@ -282,7 +285,7 @@ export const data = {
       duracion: " 5 clases de 1 hora c/u",
       calificacion: " ⭐⭐⭐⭐",
       boton: "Iniciar Curso",
-      link:"Productividad"
+      link: "Productividad"
     },
     {
       image: mt2,
@@ -291,7 +294,7 @@ export const data = {
       duracion: "4 horas",
       calificacion: "⭐⭐⭐⭐⭐",
       boton: "Iniciar Curso",
-      link:"OrganizacionPersonal"
+      link: "OrganizacionPersonal"
     },
     {
       image: mt3,
@@ -301,7 +304,7 @@ export const data = {
       duracion: "9 clases de 33min c/u",
       calificacion: "⭐⭐⭐⭐",
       boton: "Iniciar Curso",
-      link:"ControlEstres"
+      link: "ControlEstres"
     },
     {
       image: mt4,
@@ -328,7 +331,7 @@ export const data = {
       duracion: " 13 clases de 1 hora c/u",
       calificacion: "⭐⭐⭐⭐",
       boton: "Iniciar Curso",
-      link:"ExitoEmpresas"
+      link: "ExitoEmpresas"
     },
     {
       image: mt7,
@@ -368,7 +371,10 @@ export const data = {
       button: "Añadir a favoritos",
       description:
         "Las pequeñas y medianas empresas son fundamentales en el desarrollo económico de un país, principalmente porque tienen una  facilidad natural para generar empleo, distribuir a nivel regional, entre otras virtudes. Por ello es necesario promover el desarrollo de las pymes. Sin embargo, muy pocas empresas logran superar los tres años de vida y fracasan. Ante este escenario, el autor decide buscar las estructuras del mercado y las dinámicas bajo las cuales surgen y mueren tantas pymes. ",
-      comprar: "https://librerianacional.com/producto/357071"
+      comprar: "https://librerianacional.com/producto/357071",
+      id: "libro1",
+      class: "btn btn-info add-fav",
+      favorite:false
     },
     {
       image: libro2,
@@ -376,7 +382,10 @@ export const data = {
       button: "Añadir a favoritos",
       description:
         "Para tener éxito y lograr la mejor versión de ti mismo debes asumir toda la responsabilidad por tus acciones y enfocar una parte de tu tiempo y esfuerzo cada dia en tu desarrollo personal. La “Mañana Milagrosa” es un método para crear ese tiempo y desarrollar las áreas que forman tu vida (Fisica, Intelectual, Emocional y Espiritual). El método consiste de 6 herramientas: Silencio, Afirmaciones, Visualizar, Ejercicio, Leer y Escribir.",
-      comprar: "https://librerianacional.com/producto/357071"
+      comprar: "https://librerianacional.com/producto/357071",
+      id: "libro2",
+      class: "btn btn-info add-fav",
+      favorite:false
     },
     {
       image: libro3,
@@ -384,7 +393,10 @@ export const data = {
       button: "Añadir a favoritos",
       description:
         " En este libro, Gustavo Piera te invita a una de las reuniones de trabajo más importantes de tu vida, una reunión contigo mismo y con el siguiente orden del día: decidir sin interferencias ni imposiciones cuáles son tus objetivos en la vida y cómo vas a invertir tu tiempo para lograrlos. Dado que el tiempo es un bien limitado, resulta sensato reflexionar en qué vale la pena invertirlo para obtener los máximos beneficios personales.",
-      comprar: "https://librerianacional.com/producto/357071"
+      comprar: "https://librerianacional.com/producto/357071",
+      id: "libro3",
+      class: "btn btn-info add-fav",
+      favorite:false
     },
     {
       image: libro5,
@@ -392,7 +404,10 @@ export const data = {
       button: "Añadir a favoritos",
       description:
         " El autor transformó radicalmente la forma en que millones de personas alrededor del mundo perciben el concepto del dinero. Con perspectivas que contradicen el conocimiento convencional, Robert se ha ganado una gran reputación por hablar claro, ser irreverente y tener valor. Es reconocido alrededor del mundo como un defensor apasionado de la educación financiera.",
-      comprar: "https://librerianacional.com/producto/351808"
+      comprar: "https://librerianacional.com/producto/351808",
+      id: "libro4",
+      class: "btn btn-info add-fav",
+      favorite:false
     },
     {
       image: libro4,
@@ -400,7 +415,10 @@ export const data = {
       button: "Añadir a favoritos",
       description:
         " Agrupados en cinco grandes temas (la persona que emprende, la idea de negocio, los socios, el sector de actividad y la gestión del crecimiento).  El futuro emprendedor hallará aquí una prueba de fuego que le ayudará a dilucidar si reúne las condiciones para dar ese paso tan importante que supone emprender.",
-      comprar: "https://librerianacional.com/producto/357071"
+      comprar: "https://librerianacional.com/producto/357071",
+      id: "libro5",
+      class: "btn btn-info add-fav",
+      favorite:false
     },
     {
       image: libro6,
@@ -408,7 +426,10 @@ export const data = {
       button: "Añadir a favoritos",
       description:
         "Un curso dividido en siete etapas que el lector deberá adaptar a su personalidad y a su vida. El autor se sirve de anécdotas destinadas a hacernos reflexionar sobre cada uno de nuestros actos y sobre el modo de acceder al cambio. El resultado es el desarrollo del propio carácter, de la integridad humana necesarias para transformar nuestro universo.",
-      comprar: "https://librerianacional.com/producto/319486"
+      comprar: "https://librerianacional.com/producto/319486",
+      id: "libro6",
+      class: "btn btn-info add-fav",
+      favorite:false
     },
     {
       image: libro7,
@@ -416,7 +437,10 @@ export const data = {
       button: "Añadir a favoritos",
       description:
         "Esta nueva edición de Costos y presupuestos, brinda las herramientas de tecnologías de información que facilitan el manejo de los costos y recursos financieros (elaboración de presupuestos, ajuste de cifras, preparación de proyectos de producción de bienes o servicios) a los responsables de sistemas productivos. La obra busca desarrollar en el lector habilidades para aplicar herramientas de planeación y control de costos, y criterios para juzgar sus resultados; diseñar y aplicar sistemas de Costeo, Financiación y Presupuesto de procesos productivos y el apoyo de herramientas computarizados.",
-      comprar: "https://librerianacional.com/producto/348608"
+      comprar: "https://librerianacional.com/producto/348608",
+      id: "libro7",
+      class: "btn btn-info add-fav",
+      favorite:false
     },
     {
       image: libro8,
@@ -425,7 +449,10 @@ export const data = {
       description:
         "«El tiempo es dinero», dice un sabio refrán. En la actualidad, muchos de nosotros sentimos que nunca tenemos suficiente de ese precioso bien. En Controla tu tiempo, Controla tu vida, Brian Tracy, propone una estrategia nueva y brillante sobre cómo administrar nuestro tiempo y lograr mucho más día a día y con mayor rapidez y eficiencia. Basado en sus más recientes investigaciones científicas sobre productividad y en sus décadas de experiencia, el autor presenta este revolucionario programa en el cual le  asigana al tiempo diez categorías de prioridades.",
       comprar:
-        "https://librerianacional.com/producto/controla-tu-tiempo-controla-tu-vida"
+        "https://librerianacional.com/producto/controla-tu-tiempo-controla-tu-vida",
+      id: "libro8",
+      class: "btn btn-info add-fav",
+      favorite:false
     },
     {
       image: libro9,
@@ -434,7 +461,10 @@ export const data = {
       description:
         "El vicepresidente sénior de gestión de personas de Google revela por primera vez una fórmula de trabajo que se ha convertido en leyenda global. «Pasamos más tiempo trabajando que haciendo cualquier otra cosa. No resulta lógico que el trabajo resulte una experiencia desmotivadora y poco humana.» Esta la opinión de Laszlo Bock, responsable de gestión de personas de una empresa tan revolucionaria como Google. Esta idea es el eje de La nueva fórmula del trabajo, un manifiesto rompedor acerca de nuestra capacidad para cambiar la forma en la que trabajamos y vivimos.",
       comprar:
-        "https://librerianacional.com/producto/75a5fe4f-6b55-13fb-f99b-555bae21794f"
+        "https://librerianacional.com/producto/75a5fe4f-6b55-13fb-f99b-555bae21794f",
+      id: "libro9",
+      class: "btn btn-info add-fav",
+      
     }
   ],
 
@@ -507,7 +537,7 @@ export const data = {
     },
     {
       id: "inlineRadio2",
-      for:"inlineRadio2",
+      for: "inlineRadio2",
       value: "option2",
       name: "Fin de Semana"
     }
@@ -521,28 +551,44 @@ export const data = {
     },
     {
       id: "inlineRadio2",
-      for:"inlineRadio2",
+      for: "inlineRadio2",
       value: "option2",
       name: "Tarde"
     },
     {
       id: "inlineRadio3",
-      for:"inlineRadio3",
+      for: "inlineRadio3",
       value: "option3",
       name: "Noche"
     }
   ],
+  modalidad: [
+    {
+      id: "inlineRadio1",
+      for: "inlineRadio1",
+      value: "option1",
+      name: "Presencial"
+    },
+    {
+      id: "inlineRadio2",
+      for: "inlineRadio2",
+      value: "option2",
+      name: "Virtual"
+    },
+  ],
+
+
   Opciones: [
     {
-      value:"1",
+      value: "1",
       name: "Marketing Digital"
     },
     {
-      value:"2",
+      value: "2",
       name: "Manejo del Tiempo"
     },
     {
-      value:"3",
+      value: "3",
       name: "Manejo del Personal"
     }
   ],
@@ -610,41 +656,3 @@ export const data = {
   ]
 };
 
-//  temas1:[
-//   {
-//     name: "1. INTRODUCCIÓN "
-//   },
-//   {
-//     name: "2. EL MARKETING DIGITAL"
-//   },
-//   {
-//     name: "3. PLAN DE MARKETING DIGITAL"
-//   },
-//   {
-//     name: "4. MARKETING DE CONTENIDOS"
-//   },
-//   {
-//     name: "5. SOCIAL MEDIA "
-//   },
-//   {
-//     name: "6. EMAIL MARKETING"
-//   },
-//   {
-//     name: "7. SEO"
-//   },
-//   {
-//     name: "8. SEM"
-//   },
-//   {
-//     name: "9. VIDEO MARKETING"
-//   },
-//   {
-//     name: "10. ANALÍTICA "
-//   },
-//   {
-//     name: "11. AUTOMATIZACIÓN"
-//   },
-//   {
-//     name: "12. INDICADORES"
-//   },
-// ],

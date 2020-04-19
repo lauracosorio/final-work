@@ -38,7 +38,7 @@ function Configuracion(props) {
             </button>
           </form> */}
 
-        <form>
+        {/* <form>
           <h5 className="text-center spacetext text-info">
             Para cambiar tu nombre de usuario
           </h5>
@@ -65,9 +65,9 @@ function Configuracion(props) {
               </button>
             </div>
           </div>
-        </form>
+        </form> */}
 
-        <div className="configuraciones">
+        <div className="configuraciones mt-5">
 
 {dataConfiguracion.map((item, index) => {
 
@@ -126,7 +126,7 @@ function Configuracion(props) {
 })}
 </div>
 
-        <div className=" spacetext text-center">
+        <div className=" spacetext text-center mt-4">
           <h6>¿No resolvimos tus dudas? Escribenos a este correo:</h6>
           <h6 className="font-weight-bold text-info mb-5">
             nosotrosempresa@gmail.com

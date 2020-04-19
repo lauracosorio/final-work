@@ -2,9 +2,13 @@ import React, { Component } from "react";
 import {Link} from "react-router-dom";
 import HeaderPerfil from "./HeaderPerfil.jsx";
 
-class misLibros extends Component {
-  render() {
-    return (
+
+
+function misLibros () {
+
+
+
+    return(
       <>
         <HeaderPerfil />
         <div id="Content">
@@ -27,7 +31,15 @@ class misLibros extends Component {
             
 
             <h2 className="text-info cursos text-center"> MIS LIBROS FAVORITOS</h2>
-            <div className="Contenido">
+            <div className="Contenido" id="favoritos">
+        
+          
+      
+            <div>
+     
+         
+      
+        </div>
 
 
             </div>
@@ -39,7 +51,10 @@ class misLibros extends Component {
           </div>
         </div>
       </>
-    );
+    )
   }
-}
+  
+  
+  
+
 export default misLibros;

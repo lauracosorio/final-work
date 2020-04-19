@@ -2,7 +2,7 @@ import React from "react";
 import "../Styles/Content.css";
 
 function Perfil(props) {
-  const { perfil, horario, opciones } = props;
+  const { perfil, horario, modalidad, opciones } = props;
   // console.log(perfil, horario, opciones);
   const [estadoAsesorias, cambiarEstadoAsesorias] = React.useState({});
 
@@ -10,7 +10,7 @@ function Perfil(props) {
     <>
       <form
         className=""
-        onSubmit={(event) => {
+        onSubmit={event => {
           fetch("/api/asesorias", {
             method: "POST",
             body: JSON.stringify(estadoAsesorias),
@@ -20,11 +20,10 @@ function Perfil(props) {
           })
             .then(response => response.json())
             .then(data => {
-              if (data.mensaje === "Asesoria"){
-               
-              } 
-              else {
-                alert("Tú asesoría fue solicitada con éxito, pronto nos estaremos poniendo en contacto contigo.")
+              if (data.mensaje === "Asesoria") {
+                alert(
+                  "Tú asesoría fue solicitada con éxito, pronto nos estaremos poniendo en contacto contigo."
+                );
               }
             });
           event.preventDefault();
@@ -103,6 +102,33 @@ function Perfil(props) {
           </div>
 
           <div className="container text-center">
+            <h5 className="text-info">¿Cómo prefieres que se te dicte la asesoria ? </h5>
+            <div className="form-check form-check-inline">
+              {modalidad.map((item, index) => {
+                return (
+                  <>
+                    <input
+                      key={`horario-${index}`}
+                      className="form-check-input m-1 mb-3"
+                      type="radio"
+                      // name="inlineRadioOptions"
+                      id={item.id}
+                      value={item.value}
+                    />
+                    <label
+                      className="form-check-label m-1 mb-3"
+                      htmlFor={item.for}
+                    >
+                      {" "}
+                      {item.name}
+                    </label>
+                  </>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="container text-center">
             <h5 className="text-info text-center">
               Selecciona el curso en especifico
             </h5>
@@ -115,6 +141,7 @@ function Perfil(props) {
                 );
               })}
             </select>
+
           </div>
         </div>
 

@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 
 function NavPerfil(props) {
   const { Perfil, dataDespliegue } = props;
+ 
+
 
   return (
     <>
@@ -39,11 +41,13 @@ function NavPerfil(props) {
           <ul className="nav col-8">
             {Perfil.map((item, index) => {
               return (
+                <>
                 <Link to={item.link} className="nav-link text-light ">
                   <li className="nav-item perfil" key={`nav-item-${index}`}>
                     {item.name}
                   </li>
                 </Link>
+                </>
               );
             })}
             <li className="nav-item dropdown ">
@@ -71,7 +75,7 @@ function NavPerfil(props) {
                     clipRule="evenodd"
                   />
                 </svg>
-                {props.name}
+             
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
                 {dataDespliegue.map((item, index) => {
