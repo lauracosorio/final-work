@@ -598,6 +598,14 @@ export const data = {
       placeholder: "Correo Electrónico",
       id: "id_email"
     },
+    ,
+    {
+      type: "number",
+      name: "TCC",
+      purpose: "TCC",
+      placeholder: "Número de Tarjeta",
+      id: "id_code"
+    },
     {
       type: "text",
       name: "date",
