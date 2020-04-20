@@ -13,7 +13,9 @@ const ContentP = () => {
         horario = {data.Horario}
         opciones = {data.Opciones}
         modalidad = {data.modalidad}
-        title = {data.Title}/>
+        title = {data.Title}
+        inputs= {data.inputs}/>
+        
         
   </>
     );

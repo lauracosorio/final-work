@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import "../Styles/config.css";
 
 function Configuracion(props) {
-  const{dataConfiguracion} = props
-  console.log(dataConfiguracion)
+  const { dataConfiguracion } = props;
+  console.log(dataConfiguracion);
   return (
     <>
       <div className="container">
@@ -68,63 +68,62 @@ function Configuracion(props) {
         </form> */}
 
         <div className="configuraciones mt-5">
+          {dataConfiguracion.map((item, index) => {
+            return (
+              <>
+                <button
+                  key={`configuracion-${index}`}
+                  type="button"
+                  className="btn btn-outline-info m-2 "
+                  data-toggle="modal"
+                  data-target={item.target}
+                >
+                  {item.name}
+                </button>
 
-{dataConfiguracion.map((item, index) => {
-
-  return(
-    <>
-  <button
-  key={`configuracion-${index}`}
-  type="button"
-  className="btn btn-outline-info m-2 "
-  data-toggle="modal"
-  data-target={item.target}
->
- {item.name}
-</button>
-
-<div
-  className="modal fade"
-  id={item.id}
-  tabIndex="-1"
-  role="dialog"
-  aria-labelledby={item.labelledby}
-  aria-hidden="true"
->
-  <div className="modal-dialog modal-dialog-centered" role="document">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h5 className="modal-title" id={item.labelledby}>
-          {item.title}
-        </h5>
-        <button
-          type="button"
-          className="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div className="modal-body">
-       {item.description}
-      </div>
-      <div className="modal-footer">
-        <button
-          type="button"
-          className="btn btn-secondary"
-          data-dismiss="modal"
-        >
-         {item.close}
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-  </>
-  )
-})}
-</div>
+                <div
+                  className="modal fade"
+                  id={item.id}
+                  tabIndex="-1"
+                  role="dialog"
+                  aria-labelledby={item.labelledby}
+                  aria-hidden="true"
+                >
+                  <div
+                    className="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div className="modal-content">
+                      <div className="modal-header">
+                        <h5 className="modal-title" id={item.labelledby}>
+                          {item.title}
+                        </h5>
+                        <button
+                          type="button"
+                          className="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div className="modal-body">{item.description}</div>
+                      <div className="modal-footer">
+                        <button
+                          type="button"
+                          className="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          {item.close}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            );
+          })}
+        </div>
 
         <div className=" spacetext text-center mt-4">
           <h6>¿No resolvimos tus dudas? Escribenos a este correo:</h6>

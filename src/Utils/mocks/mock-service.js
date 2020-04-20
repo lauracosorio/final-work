@@ -1,4 +1,5 @@
 import { Server } from "miragejs";
+import Swal from 'sweetalert2'
 
 export default () => {
   let server = new Server({
@@ -21,6 +22,14 @@ export default () => {
         password: "123456",
         email: "mclarea021@gmail.com"
       }
+    ],
+
+    asesorias: [
+      {
+        fullname: "Laura Osorio",
+        email: "laurisosorio7@hotmail.com"
+      },
+     
     ],
 
     pagos: [
@@ -74,6 +83,8 @@ export default () => {
         {
           mensaje: "Bienvenido"
         }
+
+
       );
     }
 
@@ -84,21 +95,21 @@ export default () => {
 
   server.post("/asesorias", (schema, request) => {
     const estadoAsesoria = JSON.parse(request.requestBody);
-    const usuario = schema.db.usuarios.findBy({ email: estadoAsesoria.email });
+    const asesoria = schema.db.asesorias.findBy({ email: estadoAsesoria.email });
 
-    if (usuario) {
+    if (asesoria) {
       return Object.assign(
         {},
-        usuario,
-          {
-            email: ''
-          },
+        asesoria,
+          // {
+          //   email: ''
+          // },
           {
             mensaje: "Asesoria"
           }
       );
     }
-    return ( alert("Tú asesoría fue solicitada con éxito, pronto nos estaremos comunicando contigo."));
+    return {mensaje: "No se pudo realizar la solicitud"}
   });
 
   server.post("/pago", (schema, request) => {
@@ -117,7 +128,9 @@ export default () => {
           }
       );
     }
-    return ( alert("Tú pago fue solicitada con éxito."));
+    return{
+      mensaje: "No se pudo realizar el pago"
+    }
   });
 
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import "../Styles/Sesion.css";
+import Swal from "sweetalert2";
 
 function Sesion(props) {
   let history = useHistory(); //cambiar la ruta cuando le da submit
@@ -28,10 +29,19 @@ function Sesion(props) {
                   .then(response => response.json())
                   .then(data => {
                     if (data.mensaje === "Bienvenido") {
-                      alert("BIENVENIDO");
+                      Swal.fire({
+                        icon: "success",
+                        title: "Bienvenido",
+                        text: "¡Tú inicio de sesión ha sido satisfactorio!"
+                      });
                       history.push("/mainPerfil");
                     } else {
-                      alert("NO TE ENCUENTRAS REGISTRADO");
+                      Swal.fire({
+                        icon: "error",
+                        title: "Contraseña o email incorrectos",
+                        text:
+                          "¡Regístrate para poder conocer todo nuestro contenido!"
+                      });
                       history.push("/Registrese");
                     }
                   });
@@ -40,28 +50,6 @@ function Sesion(props) {
               method="post"
               target="#"
             >
-              <div className="form-group">
-                {redesSociales.map((item, index) => {
-                  return (
-                    <button
-                      type="submit"
-                      className={item.class}
-                      key={`buttons-${index}`}
-                    >
-                      <i className={item.icon}></i>&nbsp;&nbsp;
-                      <a
-                        href={item.Link}
-                        data-purpose={item.purpose}
-                        className={item.linkName}
-                        target="_blank"
-                      >
-                        {item.title}
-                      </a>
-                    </button>
-                  );
-                })}
-              </div>
-
               <div className="form-group col ml-n3">
                 {iniciarSesion.map((item, index) => {
                   return (
@@ -72,11 +60,11 @@ function Sesion(props) {
                         name={item.name}
                         className="textinput textInput form-control m-3"
                         required=""
-                        minlength="2"
+                        minLength="2"
                         data-purpose={item.purpose}
                         placeholder={item.placeholder}
                         id={item.id}
-                        maxlength="64"
+                        maxLength="64"
                         required
                         onChange={event => {
                           cambiarEstadoLogin(

@@ -31,7 +31,8 @@ function Footer(props) {
           </ul>
           <ul>
             {dataImg.map((item, index) => {
-              return (
+             
+             return (
                <li className="d-img col-12">
                   <img
                   className="justify-content-center"

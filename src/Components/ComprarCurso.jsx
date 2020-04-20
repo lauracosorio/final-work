@@ -1,10 +1,11 @@
 import React from "react";
-import HeaderPerfil from "./HeaderPerfil";
-import { Link, useHistory } from "react-router-dom";
+import "../Styles/comprar.css";
+import { useHistory } from "react-router-dom";
+import Swal from "sweetalert2";
 
 function ComprarCurso(props) {
   let history = useHistory(); //cambiar la ruta cuando le da submit
-  const { ComprarCurso, Pago } = props;
+  const { Pago } = props;
   const [estadoPago, cambiarEstadoPago] = React.useState({});
   return (
     <>
@@ -20,10 +21,17 @@ function ComprarCurso(props) {
             .then(response => response.json())
             .then(data => {
               if (data.mensaje === "Pago") {
-                alert("TU PAGO HA SIDO REALIZADO CON ÉXTIO ");
+                Swal.fire({
+                  icon: "success",
+                  title: "Pago realizado con éxito"
+                });
                 history.push("/mainPerfil");
               } else {
-                alert("NO SE PUDO REALIZAR EL PAGO");
+                Swal.fire({
+                  icon: "error",
+                  title: "Upps...",
+                  text: "No se pudo realizar el pago"
+                });
                 history.push("/ComprarCurso");
               }
             });
@@ -33,35 +41,63 @@ function ComprarCurso(props) {
         target="#"
       >
         <div className="container text-center">
+          <h3 className="text-info mt-4 mb-4">PAGAR</h3>
+
           <h5 className="text-info mt-4">Seleciona el tipo de compra </h5>
 
-          <div className="form-check m-2">
+          <div className="container d-flex justify-content-center tarjetas">
+            <div class="card border-info mb-3 m-4 col-md-3">
+          
+              <div class="card-body text-info PB-3">
+                <h5 class="card-title mt-3">CURSO</h5>
+                <p class="card-text mt-4">
+                  Acceso al curso seleccionado hasta que lo finalices. 
+                </p>
+              </div>
+
+              <div className="form-check m-2">
             <input
               className="form-check-input"
               type="radio"
               name="exampleRadios"
               id="exampleRadios1"
               value="option1"
-              
             />
-            <label className="form-check-label" for="exampleRadios1">
-              Comprar curso - $130.000
+            <label className="form-check-label " htmlFor="exampleRadios1">
+              $130.000
             </label>
           </div>
-          <div className="form-check m-2">
+
+            </div>
+            <div class="card border-info mb-3 m-4 col-md-3">          
+              <div class="card-body text-info">
+                <h5 class="card-title">SUSCRIPCIÓN SEMESTRAL</h5>
+                <p class="card-text">
+                  Acceso a 6 de los cursos dictados de manera ilimitada, para ti y 2 personas más.
+                </p>
+              </div>
+              <div className="form-check m-2">
             <input
               className="form-check-input"
               type="radio"
               name="exampleRadios"
-              id="exampleRadios2"
-              value="option2"
+              id="exampleRadios1"
+              value="option1"
             />
-            <label className="form-check-label " for="exampleRadios2">
-              Comprar suscripción semestral - $350.000
+            <label className="form-check-label" htmlFor="exampleRadios1">
+            $350.000
             </label>
           </div>
+            </div>
 
-          <div className="form-check  m-2">
+            <div class="card border-info mb-3 m-4 col-md-3">             
+              <div class="card-body text-info">
+                <h5 class="card-title">SUSCRIPCIÓN ANUAL</h5>
+                <p class="card-text">
+                Acceso a todos los cursos dictados de manera ilimitada, para ti y 4 personas más.
+                </p>
+              </div>
+              <div className="form-check  m-2">
             <input
               className="form-check-input"
               type="radio"
@@ -69,48 +105,32 @@ function ComprarCurso(props) {
               id="exampleRadios3"
               value="option3"
             />
-            <label className="form-check-label" for="exampleRadios3">
-              Comprar suscripción mensual - $600.000
+            <label className="form-check-label" htmlFor="exampleRadios3">
+             $600.000
             </label>
           </div>
+            </div>
+            
 
-          {/* <div className="form-check">
-            {ComprarCurso.map((item, index) => {
-              return (
-                <>
-                  <input
-                    key={`horario-${index}`}
-                      className="form-check-input   ml-1 mt-2 col-8"
-                    type="radio"
-                    name="Radio"
-                    id={item.id}
-                    value={item.value}
-                  />
-                  <label
-                    className="form-check-label m-1 mb-2 col-12"
-                    htmlFor={item.for}
-                  >
-                    {" "}
-                    {item.name}
-                  </label>
-                </>
-              );
-            })}
-          </div> */}
+          </div>
         </div>
 
-        <div className="container text-center">
+        <div className="container">
+
+        </div>
+
+        <div className="container col-8 text-center">
           <h5 className="text-info mt-3">Datos para facturación </h5>
-          <div className="form-check form-check-inline">
-            <div className="form-group mb-4">
+          <div className="form-check form-check">
+            <div className="container mb-4 justify-content-center col-md-9  justify-content-center d-flex tarjetas">
               {Pago.map((item, index) => {
                 return (
                   <>
-                    <input
+                    <input                   
                       key={`registro-item-${index}`}
                       type={item.type}
                       name={item.name}
-                      className="textinput textInput form-control m-3"
+                      className={item.class}
                       required
                       minLength="2"
                       data-purpose={item.purpose}
@@ -130,13 +150,15 @@ function ComprarCurso(props) {
               })}
             </div>
           </div>
-          <p className="">
-            <button className="btn btn-info ml-3 col-3" type="submit">
+            <button className="btn btn-info ml-3 mb-5 col-3" type="submit">
               Comprar
             </button>
-          </p>
+     
         </div>
       </form>
+            
+     
+
     </>
   );
 }

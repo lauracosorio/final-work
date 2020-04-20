@@ -50,3 +50,18 @@
     font-weight: 600;
 }
 
+.tarjetas {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.asesorias {
+    width: 100%;
+    padding: 0px;
+    margin-top: 15% !important;
+    margin-left: 1%;    
+}
+
+.asesoria {
+    margin-left: 1%;
+}

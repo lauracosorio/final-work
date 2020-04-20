@@ -1,22 +1,19 @@
 import React, { useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
-import "../Styles/Registro.css";
-import HeaderPerfil from "./HeaderPerfil";
-import NavPerfil from "./NavPerfil";
+import Swal from 'sweetalert2'
+
 
 function Registrese(props) {
   let history = useHistory(); //cambiar la ruta cuando le da submit
   const { registrese } = props;
   const [estadoFormulario, cambiarEstadoFormulario] = React.useState({});
 
-
-
   return (
     <>
       <section className="container">
         <div className="row d-flex justify-content-center">
           <div className="col-md-7">
-            <h6 className=" encabezado">
+            <h6 className=" encabezado mt-4">
               Inscríbete y comienza a aprender para mejor la experiencia de tu
               empresa.{" "}
             </h6>
@@ -35,10 +32,20 @@ function Registrese(props) {
                   .then(response => response.json())
                   .then(data => {
                     if (data.mensaje === "Bienvenido") {
-                      alert("BIENVENIDO, TU REGISTRO HA SIDO SATISFACTORIO");
-                      history.push("/mainPerfil");
+                      Swal.fire({
+                        icon: 'success',
+                        title: 'Bienvenido',
+                        text: '¡Tú registro ha sido satisfactorio!',              
+                      })
+                
+                history.push("/mainPerfil");
+                      
                     } else {
-                      alert("NO SE PUDO HACER TU REGISTRO, DATOS ERRONEOS");
+                      Swal.fire({
+                        icon: 'error',
+                        title: 'Upps',
+                        text: '¡Tú registro no se ha podido realizar!',              
+                      })
                       history.push("/Registrese");
                     }
                   });
@@ -75,10 +82,12 @@ function Registrese(props) {
                 })}
               </div>
 
-
+              <div>
+     
+    </div>
 
               <p className="">
-                <button className="btn btn-info ml-3" type="submit">
+                <button className="btn btn-info ml-3" type="submit" data-toggle="modal" data-target="#exampleModal">
                   Regístrate
                 </button>
               </p>

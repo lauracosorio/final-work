@@ -72,10 +72,10 @@ export const data = {
       title: "Mis Libros",
       link: "/MisLibros"
     },
-    // {
-    //   title: "Asesorias",
-    //   link: "/Asesorias"
-    // }
+    {
+      title: "Configuración",
+      link: "/Configuracion"
+    }
   ],
 
   Footer: [
@@ -532,37 +532,66 @@ export const data = {
     }
   ],
 
-  Perfil: [
+  inputs: [
     {
-      id: "inlineRadio1",
-      for: "inlineRadio1",
-      value: "option1",
-      name: "Semana"
+      type: "text",
+      name: "fullname",
+      purpose: "fullname",
+      placeholder: "Nombre Completo",
+      id: "exampleInputPassword1"
     },
     {
-      id: "inlineRadio2",
-      for: "inlineRadio2",
-      value: "option2",
-      name: "Fin de Semana"
+      type: "email",
+      name: "email",
+      purpose: "fullemail",
+      placeholder: "Correo Electrónico",
+      id: "exampleInputPassword2"
+    },
+   
+  ],
+
+  Perfil: [
+    {
+      value: "1",
+      name: "Lunes"
+    },
+    {
+  
+      value: "2",
+      name: "Martes"
+    },  {
+      value: "3",
+      name: "Miércoles"
+    },
+    {
+  
+      value: "4",
+      name: "Jueves"
+    },  {
+      value: "5",
+      name: "Viernes"
+    },
+    {
+  
+      value: "6",
+      name: "Sábado"
+    },  {
+      value: "7",
+      name: "Domingo"
     }
   ],
+
   Horario: [
     {
-      id: "inlineRadio1",
-      for: "inlineRadio1",
-      value: "option1",
+      value: "1",
       name: "Mañana"
     },
     {
-      id: "inlineRadio2",
-      for: "inlineRadio2",
-      value: "option2",
+      value: "2",
       name: "Tarde"
     },
     {
-      id: "inlineRadio3",
-      for: "inlineRadio3",
-      value: "option3",
+      value: "3",
       name: "Noche"
     }
   ],
@@ -593,14 +622,16 @@ export const data = {
       name: "fullname",
       purpose: "fullname",
       placeholder: "Nombre completo",
-      id: "id_fullname"
+      id: "id_fullname",
+      class: "textinput textInput form-control m-3 col-md-9"
     },
     {
       type: "email",
       name: "email",
       purpose: "fullemail",
       placeholder: "Correo Electrónico",
-      id: "id_email"
+      id: "id_email",
+      class: "textinput textInput form-control m-3 col-md-9"
     },
     ,
     {
@@ -608,21 +639,24 @@ export const data = {
       name: "TCC",
       purpose: "TCC",
       placeholder: "Número de Tarjeta",
-      id: "id_code"
+      id: "id_code",
+      class: "numberinput numberInput form-control m-3 col-md-9"
     },
     {
       type: "text",
       name: "date",
       purpose: "date",
       placeholder: "Fecha de Vencimiento",
-      id: "id_date"
+      id: "id_date",
+      class: "textinput textInput form-control mt-3 mr-4 ml-n2 col-md-4"
     },
     {
       type: "number",
       name: "code",
       purpose: "code",
       placeholder: "Código de Seguridad",
-      id: "id_code"
+      id: "id_code",
+      class: "numberinput numberInput form-control mt-3 ml-1 col-md-4"
     }
   ],
 

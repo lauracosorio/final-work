@@ -1,52 +1,28 @@
 import React from "react";
 import logo from "../Images/logo.png";
-import "../Styles/Header.css"
+import "../Styles/Header.css";
 import { Link } from "react-router-dom";
 
 function NavPerfil(props) {
   const { Perfil, dataDespliegue } = props;
- 
-
 
   return (
     <>
       <nav className=" navbar navbar-expand-lg navbar-light bg-info">
-        <Link
-          to="/mainPerfil"
-          className="navbar-brand text-light"
-          href="#"
-        >
+        <Link to="/mainPerfil" className="navbar-brand text-light" href="#">
           <img src={logo} width="100" alt="" />
         </Link>
-
-        {/* <div
-          className="collapse navbar-collapse col-8 justify-content-center"
-          id="navbarSupportedContent"
-        >
-          <form className="form-inline ">
-            <input
-              className="form-control mr-sm-2 col-8"
-              type="search"
-              placeholder="Cursos, libros ..."
-              aria-label="Search"
-              size="70"
-            />
-            <button className="btn bg-light my-2 mr-sm-5 ml-sm-2 col-2" type="submit">
-              Buscar
-            </button>
-          </form>
-        </div> */}
 
         <div className="nav-list col-10">
           <ul className="nav col-8">
             {Perfil.map((item, index) => {
               return (
                 <>
-                <Link to={item.link} className="nav-link text-light ">
-                  <li className="nav-item perfil" key={`nav-item-${index}`}>
-                    {item.name}
-                  </li>
-                </Link>
+                  <Link to={item.link} className="nav-link text-light ">
+                    <li className="nav-item perfil" key={`nav-item-${index}`}>
+                      {item.name}
+                    </li>
+                  </Link>
                 </>
               );
             })}
@@ -75,7 +51,6 @@ function NavPerfil(props) {
                     clipRule="evenodd"
                   />
                 </svg>
-             
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
                 {dataDespliegue.map((item, index) => {
@@ -93,8 +68,8 @@ function NavPerfil(props) {
                 })}
 
                 <div className="dropdown-divider"></div>
-                <Link className="dropdown-item" to="/Configuracion">
-                  Configuración
+                <Link className="dropdown-item" to="">
+                  Cerrar Sesión
                 </Link>
               </div>
             </li>
