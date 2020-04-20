@@ -56,6 +56,10 @@ export const data = {
     {
       name: "Libros",
       link: "/LibrosPerfil"
+    },
+    {
+      name: "Asesorias",
+      link: "/Asesorias"
     }
   ],
 
@@ -68,10 +72,10 @@ export const data = {
       title: "Mis Libros",
       link: "/MisLibros"
     },
-    {
-      title: "Asesorias",
-      link: "/Asesorias"
-    }
+    // {
+    //   title: "Asesorias",
+    //   link: "/Asesorias"
+    // }
   ],
 
   Footer: [
